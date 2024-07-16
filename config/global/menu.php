@@ -369,55 +369,55 @@ return array(
 			),
 		),
 
-		array(
-			'title' => 'Setting',
-			'icon' => array(
-				'svg' => theme()->getSvgIcon("demo1/media/icons/duotune/general/gen025.svg", "svg-icon-2"),
-				'font' => '<i class="bi bi-layers fs-3"></i>',
-			),
-			'classes' => array('item' => 'menu-accordion'),
-			'attributes' => array("data-kt-menu-trigger" => "click"),
-			'sub' => array(
-				'class' => 'menu-sub-accordion',
-				'items' => array(
+//		array(
+//			'title' => 'Setting',
+//			'icon' => array(
+//				'svg' => theme()->getSvgIcon("demo1/media/icons/duotune/general/gen025.svg", "svg-icon-2"),
+//				'font' => '<i class="bi bi-layers fs-3"></i>',
+//			),
+//			'classes' => array('item' => 'menu-accordion'),
+//			'attributes' => array("data-kt-menu-trigger" => "click"),
+//			'sub' => array(
+//				'class' => 'menu-sub-accordion',
+//				'items' => array(
 //					array(
 //						'title' => 'Setting Users',
 //						'path' => 'bankusers/settings',
 //						'bullet' => '<span class="bullet bullet-dot"></span>',
 //					),
-					array(
-						'title' => 'Ngân Hàng',
-						'path' => 'banks',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-					array(
-						'title' => 'Profile',
-						'path' => 'partners_profile',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-					array(
-						'title' => 'Cron vcb',
-						'path' => 'partners_profile/cron_vcb',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-					array(
-						'title' => 'VCB',
-						'path' => 'partners_profile/vcb',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-					array(
-						'title' => 'Logs',
-						'path' => 'partners_logs',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
 //					array(
-//						'title' => 'Logs Users',
-//						'path' => 'logsusers',
+//						'title' => 'Ngân Hàng',
+//						'path' => 'banks',
 //						'bullet' => '<span class="bullet bullet-dot"></span>',
-//					)
-				),
-			),
-		),
+//					),
+//					array(
+//						'title' => 'Profile',
+//						'path' => 'partners_profile',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//					array(
+//						'title' => 'Cron vcb',
+//						'path' => 'partners_profile/cron_vcb',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//					array(
+//						'title' => 'VCB',
+//						'path' => 'partners_profile/vcb',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//					array(
+//						'title' => 'Logs',
+//						'path' => 'partners_logs',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+////					array(
+////						'title' => 'Logs Users',
+////						'path' => 'logsusers',
+////						'bullet' => '<span class="bullet bullet-dot"></span>',
+////					)
+//				),
+//			),
+//		),
 
 		array(
 			'title' => 'Lịch Sử',
