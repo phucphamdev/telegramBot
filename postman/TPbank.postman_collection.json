@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "e40fd9c5-0f04-48c7-b57a-6ac9463fa7dc",
+		"name": "TPbank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5537388"
+	},
+	"item": [
+		{
+			"name": "http://ace1368.test/api/tpbank/doLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/tpbank/doLogin",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"doLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/tpbank/getInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/tpbank/getInfo",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"getInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/tpbank/getHistories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/tpbank/getHistories",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"getHistories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/tpbank/getHistories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/tpbank/getHistories",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"getHistories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "b982ab6a-68a7-4388-b827-78b7f6a972fe",
+		"name": "Vietcombank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5537388"
+	},
+	"item": [
+		{
+			"name": "doLogin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic QURNSU46QURNSU4=",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "User-Agent",
+						"value": "MB%20Bank/2 CFNetwork/1331.0.3 Darwin/21.4.0",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/vietcombank/doLogin",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"vietcombank",
+						"doLogin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

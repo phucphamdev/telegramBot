@@ -1,0 +1,162 @@
+version: '3'
+
+networks:
+  laravel:
+
+services:
+  site:
+    build:
+      context: ./dockerfiles
+      dockerfile: nginx.dockerfile
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/html:delegated
+      - ./landing:/var/www/landing:delegated
+    depends_on:
+      - php
+      - redis
+      - mysql
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    networks:
+      - laravel
+  mysql:
+    image: mariadb:10.6
+    container_name: mysql
+    restart: unless-stopped
+    tty: true
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: ace138
+      MYSQL_USER: ace138
+      MYSQL_PASSWORD: ace138@2022
+      MYSQL_ROOT_PASSWORD: ace138@2022
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./mysql:/var/lib/mysql
+    networks:
+      - laravel
+
+  php:
+    build:
+      context: ./dockerfiles
+      dockerfile: php.dockerfile
+    container_name: php
+    restart: unless-stopped
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    volumes:
+      - ./src:/var/www/html:delegated
+      - ./config/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    networks:
+      - laravel
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: unless-stopped
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    ports:
+      - 6379:6379
+    networks:
+      - laravel
+
+  composer:
+    image: composer:2
+    container_name: composer
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    depends_on:
+      - php
+    user: root
+    entrypoint: [ 'composer', '--ignore-platform-reqs' ]
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    networks:
+      - laravel
+
+  npm:
+    image: node:13.7
+    container_name: npm
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 3000:3000
+      - 3001:3001
+    working_dir: /var/www/html
+    entrypoint: [ 'npm' ]
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    networks:
+      - laravel
+
+  artisan:
+    build:
+      context: ./dockerfiles
+      dockerfile: php.dockerfile
+    container_name: artisan
+    volumes:
+      - ./src:/var/www/html:delegated
+    depends_on:
+      - mysql
+    working_dir: /var/www/html
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    entrypoint: [ 'php', '/var/www/html/artisan' ]
+    networks:
+      - laravel
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 300M
+    restart: always
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    ports:
+      - 8081:80
+    networks:
+      - laravel
+  cron:
+    build:
+      context: ./dockerfiles
+      dockerfile: cron.dockerfile
+    container_name: cron
+    logging:
+      options:
+        max-size: "500M"
+        max-file: "5"
+    volumes:
+      - ./src:/var/www/html
+    networks:
+      - laravel

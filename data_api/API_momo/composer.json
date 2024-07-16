@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpseclib/phpseclib": "~2.0",
+        "php-curl-class/php-curl-class": "^9.1"
+    }
+}

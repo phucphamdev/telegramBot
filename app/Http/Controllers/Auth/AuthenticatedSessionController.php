@@ -1,64 +1,67 @@
 <?php
-
-namespace App\Http\Controllers\Auth;
-
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Auth\LoginRequest;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Auth;
-
-class AuthenticatedSessionController extends Controller
-{
-    /**
-     * Display the login view.
-     *
-     * @return \Illuminate\View\View
-     */
-    public function create()
-    {
-        addJavascriptFile('assets/js/custom/authentication/sign-in/general.js');
-
-        return view('pages/auth.login');
-    }
-
-    /**
-     * Handle an incoming authentication request.
-     *
-     * @param  \App\Http\Requests\Auth\LoginRequest  $request
-     *
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function store(LoginRequest $request)
-    {
-        $request->authenticate();
-
-        $request->session()->regenerate();
-
-        $request->user()->update([
-            'last_login_at' => Carbon::now()->toDateTimeString(),
-            'last_login_ip' => $request->getClientIp()
-        ]);
-
-        return redirect()->intended(RouteServiceProvider::HOME);
-    }
-
-    /**
-     * Destroy an authenticated session.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     *
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function destroy(Request $request)
-    {
-        Auth::guard('web')->logout();
-
-        $request->session()->invalidate();
-
-        $request->session()->regenerateToken();
-
-        return redirect('/');
-    }
-}
+	
+	namespace App\Http\Controllers\Auth;
+	
+	use App\Http\Controllers\Controller;
+	use App\Http\Requests\Auth\LoginRequest;
+	use App\Models\User;
+	use App\Providers\RouteServiceProvider;
+	use Illuminate\Http\Request;
+	use Illuminate\Support\Facades\Auth;
+	use Illuminate\Validation\ValidationException;
+	
+	class AuthenticatedSessionController extends Controller
+	{
+		public function create()
+		{
+			return view('auth.login');
+		}
+		
+		public function store(LoginRequest $request)
+		{
+			$request->authenticate();
+			
+			$request->session()->regenerate();
+			
+			return redirect()->intended(RouteServiceProvider::HOME);
+		}
+		
+		public function apiStore(LoginRequest $request)
+		{
+			if (!Auth::attempt($request->only('email', 'password'))) {
+				throw ValidationException::withMessages([
+					'email' => ['The provided credentials are incorrect']
+				]);
+			}
+			
+			$user = User::where('email', $request->email)->first();
+			return response($user);
+		}
+		
+		public function apiVerifyToken(Request $request)
+		{
+			$request->validate([
+				'api_token' => 'required'
+			]);
+			
+			$user = User::where('api_token', $request->api_token)->first();
+			
+			if (!$user) {
+				throw ValidationException::withMessages([
+					'token' => ['Invalid token']
+				]);
+			}
+			return response($user);
+		}
+		
+		public function destroy(Request $request)
+		{
+			Auth::guard('web')->logout();
+			
+			$request->session()->invalidate();
+			
+			$request->session()->regenerateToken();
+			
+			return redirect('/');
+		}
+	}

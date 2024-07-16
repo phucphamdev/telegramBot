@@ -5,18 +5,29 @@
 		<!--begin::Title-->
 		<h3 class="card-title align-items-start flex-column">
 			<span class="card-label fw-bold text-gray-800">Authors Achievements</span>
-			<span class="text-gray-500 mt-1 fw-semibold fs-6">Avg. 69.34% Conv. Rate</span>
+			<span class="text-gray-400 mt-1 fw-semibold fs-6">Avg. 69.34% Conv. Rate</span>
 		</h3>
 		<!--end::Title-->
 		<!--begin::Toolbar-->
 		<div class="card-toolbar">
 			<!--begin::Menu-->
-			<button class="btn btn-icon btn-color-gray-500 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">{!! getIcon('dots-square', 'fs-1 text-gray-300 me-n1') !!}</button>
+			<button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
+				<!--begin::Svg Icon | path: icons/duotune/general/gen023.svg-->
+				<span class="svg-icon svg-icon-1 svg-icon-gray-300 me-n1">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="4" fill="currentColor" />
+						<rect x="11" y="11" width="2.6" height="2.6" rx="1.3" fill="currentColor" />
+						<rect x="15" y="11" width="2.6" height="2.6" rx="1.3" fill="currentColor" />
+						<rect x="7" y="11" width="2.6" height="2.6" rx="1.3" fill="currentColor" />
+					</svg>
+				</span>
+				<!--end::Svg Icon-->
+			</button>
 			<!--begin::Menu 2-->
 			<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px" data-kt-menu="true">
 				<!--begin::Menu item-->
 				<div class="menu-item px-3">
-					<div class="menu-content fs-6 text-gray-900 fw-bold px-3 py-4">Quick Actions</div>
+					<div class="menu-content fs-6 text-dark fw-bold px-3 py-4">Quick Actions</div>
 				</div>
 				<!--end::Menu item-->
 				<!--begin::Menu separator-->
@@ -92,7 +103,9 @@
 				<!--begin::Link-->
 				<a class="nav-link btn btn-outline btn-flex btn-color-muted btn-active-color-primary flex-column overflow-hidden w-80px h-85px pt-5 pb-2 active" id="kt_stats_widget_16_tab_link_1" data-bs-toggle="pill" href="#kt_stats_widget_16_tab_1">
 					<!--begin::Icon-->
-					<div class="nav-icon mb-3">{!! getIcon('car', 'fs-1') !!}</div>
+					<div class="nav-icon mb-3">
+						<i class="fonticon-drive fs-1 p-0"></i>
+					</div>
 					<!--end::Icon-->
 					<!--begin::Title-->
 					<span class="nav-text text-gray-800 fw-bold fs-6 lh-1">SaaS</span>
@@ -109,7 +122,9 @@
 				<!--begin::Link-->
 				<a class="nav-link btn btn-outline btn-flex btn-color-muted btn-active-color-primary flex-column overflow-hidden w-80px h-85px pt-5 pb-2" id="kt_stats_widget_16_tab_link_2" data-bs-toggle="pill" href="#kt_stats_widget_16_tab_2">
 					<!--begin::Icon-->
-					<div class="nav-icon mb-3">{!! getIcon('bitcoin', 'fs-1') !!}</div>
+					<div class="nav-icon mb-3">
+						<i class="fonticon-bank fs-1 p-0"></i>
+					</div>
 					<!--end::Icon-->
 					<!--begin::Title-->
 					<span class="nav-text text-gray-800 fw-bold fs-6 lh-1">Crypto</span>
@@ -126,7 +141,9 @@
 				<!--begin::Link-->
 				<a class="nav-link btn btn-outline btn-flex btn-color-muted btn-active-color-primary flex-column overflow-hidden w-80px h-85px pt-5 pb-2" id="kt_stats_widget_16_tab_link_3" data-bs-toggle="pill" href="#kt_stats_widget_16_tab_3">
 					<!--begin::Icon-->
-					<div class="nav-icon mb-3">{!! getIcon('like', 'fs-1') !!}</div>
+					<div class="nav-icon mb-3">
+						<i class="fonticon-like-1 fs-1 p-0"></i>
+					</div>
 					<!--end::Icon-->
 					<!--begin::Title-->
 					<span class="nav-text text-gray-800 fw-bold fs-6 lh-1">Social</span>
@@ -143,7 +160,9 @@
 				<!--begin::Link-->
 				<a class="nav-link btn btn-outline btn-flex btn-color-muted btn-active-color-primary flex-column overflow-hidden w-80px h-85px pt-5 pb-2" id="kt_stats_widget_16_tab_link_4" data-bs-toggle="pill" href="#kt_stats_widget_16_tab_4">
 					<!--begin::Icon-->
-					<div class="nav-icon mb-3">{!! getIcon('tablet', 'fs-1') !!}</div>
+					<div class="nav-icon mb-3">
+						<i class="fonticon-remote-control fs-1 p-0"></i>
+					</div>
 					<!--end::Icon-->
 					<!--begin::Title-->
 					<span class="nav-text text-gray-800 fw-bold fs-6 lh-1">Mobile</span>
@@ -160,7 +179,9 @@
 				<!--begin::Link-->
 				<a class="nav-link btn btn-outline btn-flex btn-color-muted btn-active-color-primary flex-column overflow-hidden w-80px h-85px pt-5 pb-2" id="kt_stats_widget_16_tab_link_5" data-bs-toggle="pill" href="#kt_stats_widget_16_tab_5">
 					<!--begin::Icon-->
-					<div class="nav-icon mb-3">{!! getIcon('send', 'fs-1') !!}</div>
+					<div class="nav-icon mb-3">
+						<i class="fonticon-telegram fs-1 p-0"></i>
+					</div>
 					<!--end::Icon-->
 					<!--begin::Title-->
 					<span class="nav-text text-gray-800 fw-bold fs-6 lh-1">Others</span>
@@ -184,7 +205,7 @@
 					<table class="table table-row-dashed align-middle gs-0 gy-3 my-0">
 						<!--begin::Table head-->
 						<thead>
-							<tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
+							<tr class="fs-7 fw-bold text-gray-400 border-bottom-0">
 								<th class="p-0 pb-3 min-w-150px text-start">AUTHOR</th>
 								<th class="p-0 pb-3 min-w-100px text-end pe-13">CONV.</th>
 								<th class="p-0 pb-3 w-125px text-end pe-7">CHART</th>
@@ -198,11 +219,11 @@
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-3.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-3.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Guy Hawkins</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Haiti</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Haiti</span>
 										</div>
 									</div>
 								</td>
@@ -213,18 +234,27 @@
 									<div id="kt_table_widget_16_chart_1_1" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-2.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-2.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jane Cooper</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Monaco</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Monaco</span>
 										</div>
 									</div>
 								</td>
@@ -235,18 +265,27 @@
 									<div id="kt_table_widget_16_chart_1_2" class="h-50px mt-n8 pe-7" data-kt-chart-color="danger"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-9.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-9.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jacob Jones</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Poland</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Poland</span>
 										</div>
 									</div>
 								</td>
@@ -257,18 +296,27 @@
 									<div id="kt_table_widget_16_chart_1_3" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-7.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-7.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Cody Fishers</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Mexico</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Mexico</span>
 										</div>
 									</div>
 								</td>
@@ -279,7 +327,16 @@
 									<div id="kt_table_widget_16_chart_1_4" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 						</tbody>
@@ -298,7 +355,7 @@
 					<table class="table table-row-dashed align-middle gs-0 gy-3 my-0">
 						<!--begin::Table head-->
 						<thead>
-							<tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
+							<tr class="fs-7 fw-bold text-gray-400 border-bottom-0">
 								<th class="p-0 pb-3 min-w-150px text-start">AUTHOR</th>
 								<th class="p-0 pb-3 min-w-100px text-end pe-13">CONV.</th>
 								<th class="p-0 pb-3 w-125px text-end pe-7">CHART</th>
@@ -312,11 +369,11 @@
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-25.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-25.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Brooklyn Simmons</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Poland</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Poland</span>
 										</div>
 									</div>
 								</td>
@@ -327,18 +384,27 @@
 									<div id="kt_table_widget_16_chart_2_1" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-24.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-24.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Esther Howard</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Mexico</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Mexico</span>
 										</div>
 									</div>
 								</td>
@@ -349,18 +415,27 @@
 									<div id="kt_table_widget_16_chart_2_2" class="h-50px mt-n8 pe-7" data-kt-chart-color="danger"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-20.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-20.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Annette Black</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Haiti</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Haiti</span>
 										</div>
 									</div>
 								</td>
@@ -371,18 +446,27 @@
 									<div id="kt_table_widget_16_chart_2_3" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-17.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-17.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Marvin McKinney</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Monaco</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Monaco</span>
 										</div>
 									</div>
 								</td>
@@ -393,7 +477,16 @@
 									<div id="kt_table_widget_16_chart_2_4" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 						</tbody>
@@ -412,7 +505,7 @@
 					<table class="table table-row-dashed align-middle gs-0 gy-3 my-0">
 						<!--begin::Table head-->
 						<thead>
-							<tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
+							<tr class="fs-7 fw-bold text-gray-400 border-bottom-0">
 								<th class="p-0 pb-3 min-w-150px text-start">AUTHOR</th>
 								<th class="p-0 pb-3 min-w-100px text-end pe-13">CONV.</th>
 								<th class="p-0 pb-3 w-125px text-end pe-7">CHART</th>
@@ -426,11 +519,11 @@
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-11.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-11.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jacob Jones</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">New York</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">New York</span>
 										</div>
 									</div>
 								</td>
@@ -441,18 +534,27 @@
 									<div id="kt_table_widget_16_chart_3_1" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-23.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-23.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Ronald Richards</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Madrid</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Madrid</span>
 										</div>
 									</div>
 								</td>
@@ -463,18 +565,27 @@
 									<div id="kt_table_widget_16_chart_3_2" class="h-50px mt-n8 pe-7" data-kt-chart-color="danger"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-4.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-4.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Leslie Alexander</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Pune</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Pune</span>
 										</div>
 									</div>
 								</td>
@@ -485,18 +596,27 @@
 									<div id="kt_table_widget_16_chart_3_3" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-1.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-1.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Courtney Henry</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Mexico</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Mexico</span>
 										</div>
 									</div>
 								</td>
@@ -507,7 +627,16 @@
 									<div id="kt_table_widget_16_chart_3_4" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 						</tbody>
@@ -526,7 +655,7 @@
 					<table class="table table-row-dashed align-middle gs-0 gy-3 my-0">
 						<!--begin::Table head-->
 						<thead>
-							<tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
+							<tr class="fs-7 fw-bold text-gray-400 border-bottom-0">
 								<th class="p-0 pb-3 min-w-150px text-start">AUTHOR</th>
 								<th class="p-0 pb-3 min-w-100px text-end pe-13">CONV.</th>
 								<th class="p-0 pb-3 w-125px text-end pe-7">CHART</th>
@@ -540,11 +669,11 @@
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-12.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-12.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Arlene McCoy</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">London</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">London</span>
 										</div>
 									</div>
 								</td>
@@ -555,18 +684,27 @@
 									<div id="kt_table_widget_16_chart_4_1" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-21.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-21.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Marvin McKinneyr</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Monaco</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Monaco</span>
 										</div>
 									</div>
 								</td>
@@ -577,18 +715,27 @@
 									<div id="kt_table_widget_16_chart_4_2" class="h-50px mt-n8 pe-7" data-kt-chart-color="danger"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-30.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-30.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jacob Jones</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">PManila</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">PManila</span>
 										</div>
 									</div>
 								</td>
@@ -599,18 +746,27 @@
 									<div id="kt_table_widget_16_chart_4_3" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-14.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-14.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Esther Howard</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Iceland</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Iceland</span>
 										</div>
 									</div>
 								</td>
@@ -621,7 +777,16 @@
 									<div id="kt_table_widget_16_chart_4_4" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 						</tbody>
@@ -640,7 +805,7 @@
 					<table class="table table-row-dashed align-middle gs-0 gy-3 my-0">
 						<!--begin::Table head-->
 						<thead>
-							<tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
+							<tr class="fs-7 fw-bold text-gray-400 border-bottom-0">
 								<th class="p-0 pb-3 min-w-150px text-start">AUTHOR</th>
 								<th class="p-0 pb-3 min-w-100px text-end pe-13">CONV.</th>
 								<th class="p-0 pb-3 w-125px text-end pe-7">CHART</th>
@@ -654,11 +819,11 @@
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-6.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-6.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jane Cooper</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Haiti</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Haiti</span>
 										</div>
 									</div>
 								</td>
@@ -669,18 +834,27 @@
 									<div id="kt_table_widget_16_chart_5_1" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-10.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-10.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Esther Howard</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Kiribati</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Kiribati</span>
 										</div>
 									</div>
 								</td>
@@ -691,18 +865,27 @@
 									<div id="kt_table_widget_16_chart_5_2" class="h-50px mt-n8 pe-7" data-kt-chart-color="danger"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-9.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-9.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Jacob Jones</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Poland</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Poland</span>
 										</div>
 									</div>
 								</td>
@@ -713,18 +896,27 @@
 									<div id="kt_table_widget_16_chart_5_3" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<div class="d-flex align-items-center">
 										<div class="symbol symbol-50px me-3">
-											<img src="{{ image('avatars/300-3.jpg') }}" class="" alt="" />
+											<img src={{ asset(theme()->getMediaUrlPath() . 'avatars/300-3.jpg') }} class="" alt="" />
 										</div>
 										<div class="d-flex justify-content-start flex-column">
 											<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Ralph Edwards</a>
-											<span class="text-gray-500 fw-semibold d-block fs-7">Mexico</span>
+											<span class="text-gray-400 fw-semibold d-block fs-7">Mexico</span>
 										</div>
 									</div>
 								</td>
@@ -735,7 +927,16 @@
 									<div id="kt_table_widget_16_chart_5_4" class="h-50px mt-n8 pe-7" data-kt-chart-color="success"></div>
 								</td>
 								<td class="text-end">
-									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">{!! getIcon('black-right', 'fs-2 text-gray-500') !!}</a>
+									<a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary w-30px h-30px">
+										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
+										<span class="svg-icon svg-icon-5 svg-icon-gray-700">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.4 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H14.4V11Z" fill="currentColor" />
+												<path opacity="0.3" d="M14.4 20V4L21.7 11.3C22.1 11.7 22.1 12.3 21.7 12.7L14.4 20Z" fill="currentColor" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</a>
 								</td>
 							</tr>
 						</tbody>

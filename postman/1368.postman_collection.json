@@ -1,0 +1,410 @@
+{
+	"info": {
+		"_postman_id": "4285a3be-3d64-47e3-8b4a-a9a0c1b17fec",
+		"name": "1368",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5537388"
+	},
+	"item": [
+		{
+			"name": "MBBanks",
+			"item": [
+				{
+					"name": "Get_apiHeaderDefault",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "'Bearer '.$accessToken,",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "toidicodedao@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/login",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "'Bearer '.$accessToken,",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "toidicodedao4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Phuc",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Pham",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/register",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profits",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "'Bearer '.$accessToken,",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "demo@demo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/profits",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"profits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "system_get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "'Bearer '.$accessToken,",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "demo@demo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/system/get",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"system",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "'Bearer '.$accessToken,",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "demo@demo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/user",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_user_by_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "'Bearer '.$accessToken,",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "demo@demo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/user/103",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"user",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_user_by_email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "'Bearer '.$accessToken,",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "demo@demo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/user/email/phuc@gmail.com",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"user",
+						"email",
+						"phuc@gmail.com"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "demo@demo.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/acb/getUserDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"begin\": \"\",\r\n    \"end\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://acb.test:7002/",
+					"protocol": "http",
+					"host": [
+						"acb",
+						"test"
+					],
+					"port": "7002",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

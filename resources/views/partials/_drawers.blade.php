@@ -1,5 +1,4 @@
 <!--begin::Drawers-->
-@include('partials/drawers/_activity-drawer')
-@include('partials/drawers/_chat-messenger')
-@include('partials/drawers/_shopping-cart')
+{{ theme()->getView('partials/drawers/_activity-drawer') }}
+{{ theme()->getView('partials/drawers/_chat-messenger') }}
 <!--end::Drawers-->

@@ -1,69 +1,125 @@
 <?php
 
-namespace App\Models;
+	namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
-use Spatie\Permission\Traits\HasRoles;
+	use App\Core\Traits\SpatieLogsActivity;
+	use Illuminate\Contracts\Auth\MustVerifyEmail;
+	use Illuminate\Database\Eloquent\Factories\HasFactory;
+	use Illuminate\Foundation\Auth\User as Authenticatable;
+	use Illuminate\Notifications\Notifiable;
+	use Laravel\Sanctum\HasApiTokens;
+	use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable implements MustVerifyEmail
-{
-    use HasApiTokens, HasFactory, Notifiable;
-    use HasRoles;
+//	use Tymon\JWTAuth\Contracts\JWTSubject;
+	use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'last_login_at',
-        'last_login_ip',
-        'profile_photo_path',
-    ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+	class User extends Authenticatable implements MustVerifyEmail
+	{
+		//	class User extends Authenticatable implements MustVerifyEmail
+		use HasFactory, Notifiable, HasApiTokens;
+		use SpatieLogsActivity;
+		use HasRoles;
+		use Loggable;
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-        'last_login_at' => 'datetime',
-    ];
+		protected $table = 'users';
 
-    public function getProfilePhotoUrlAttribute()
-    {
-        if ($this->profile_photo_path) {
-            return asset('storage/' . $this->profile_photo_path);
+		protected $fillable = [
+			'id',
+			'token_type',
+			'expires_in',
+			'first_name',
+			'last_name',
+			'UUID',
+			'email',
+			'email_verified_at',
+			'api_token',
+			'type',
+			'callback_link',
+			'access_token',
+			'ip',
+			'key',
+			'tai_khoan',
+			'telegram',
+			'trang_thai',
+			'dien_thoai',
+			'website',
+			'cong_ty',
+			'quoc_gia',
+			'ck_momo',
+			'ck_vtpay',
+			'ck_bank',
+			'ck_zalo',
+			'so_du',
+			'role',
+			'banklist',
+			'expires_at',
+			'last_used_at',
+			'password',
+		];
+
+		protected $hidden = [
+			'password',
+			'remember_token',
+		];
+
+		protected $casts = [
+			'email_verified_at' => 'datetime',
+		];
+
+		public function getRememberToken()
+		{
+			return $this->remember_token;
+		}
+
+		public function setRememberToken($value)
+		{
+			$this->remember_token = $value;
+		}
+
+		public function getNameAttribute()
+		{
+			return "{$this->first_name} {$this->last_name}";
+		}
+
+		public function getAvatarUrlAttribute()
+		{
+			if ($this->info) {
+				return asset($this->info->avatar_url);
+			}
+
+			return asset(theme()->getMediaUrlPath() . 'avatars/blank.png');
+		}
+
+		public function info()
+		{
+			return $this->hasOne(UserInfo::class);
+		}
+
+		public function role()
+		{
+			return $this->role;
+		}
+
+		public function access_token()
+		{
+			return $this->access_token;
+		}
+
+		public function first_name()
+		{
+			return $this->first_name;
+		}
+
+        public function last_name()
+        {
+            return $this->last_name;
         }
 
-        return $this->profile_photo_path;
-    }
+        public function id()
+        {
+            return $this->id;
+        }
 
-    public function addresses()
-    {
-        return $this->hasMany(Address::class);
-    }
 
-    public function getDefaultAddressAttribute()
-    {
-        return $this->addresses?->first();
-    }
-}
+	}

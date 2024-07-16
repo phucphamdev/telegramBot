@@ -1,0 +1,571 @@
+{
+	"info": {
+		"_postman_id": "906e84f4-cd2c-4321-8819-63043e56a25a",
+		"name": "ACB API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check Transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"begin\": \"01/10/2020 00:00:00\",\r\n    \"end\": \"29/10/2020 00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/acb/transactions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acb",
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Check Transactions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"begin\": \"01/10/2020 00:00:00\",\r\n    \"end\": \"29/10/2020 00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/acb/transactions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acb",
+								"transactions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7067"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b9b-kY4mwgH73blyT96Q8GsV+OEAWLE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Oct 2020 10:14:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"took\": 2578,\n    \"transactions\": [\n        {\n            \"amount\": 70000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3137,\n            \"description\": \"Test GD 504362-102920 17:03:05\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1603904400000,\n            \"accountOwner\": null,\n            \"type\": \"IN\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603965787000,\n            \"effectiveDate\": 1603904400000\n        },\n        {\n            \"amount\": 10000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": \"NGUYEN TIN ANH THU\",\n            \"transactionNumber\": 3136,\n            \"description\": \"IB NGUYEN VAN TAI HELLO 1234\",\n            \"bankName\": \"ACB - NH TMCP A CHAU\",\n            \"isOnline\": false,\n            \"postingDate\": 1603904400000,\n            \"accountOwner\": null,\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603965173000,\n            \"effectiveDate\": 1603904400000\n        },\n        {\n            \"amount\": 10000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": \"NGUYEN TIN ANH THU\",\n            \"transactionNumber\": 3135,\n            \"description\": \"IB NGUYEN VAN TAI CHUYEN KHOAN CHO NGUYEN TIN ANH THU\",\n            \"bankName\": \"ACB - NH TMCP A CHAU\",\n            \"isOnline\": false,\n            \"postingDate\": 1603904400000,\n            \"accountOwner\": null,\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603964877000,\n            \"effectiveDate\": 1603904400000\n        },\n        {\n            \"amount\": 10000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": \"NGUYEN TIN ANH THU\",\n            \"transactionNumber\": 3134,\n            \"description\": \"IB NGUYEN VAN TAI HELLO1111\",\n            \"bankName\": \"ACB - NH TMCP A CHAU\",\n            \"isOnline\": false,\n            \"postingDate\": 1603904400000,\n            \"accountOwner\": null,\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603956909000,\n            \"effectiveDate\": 1603904400000\n        },\n        {\n            \"amount\": 69000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3133,\n            \"description\": \"9704xx6174 GD taiMC - MOCA trace 525721 ST 69000VND - 27/10/2020:180214\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1603904400000,\n            \"accountOwner\": \"BUI PHAM BAO YEN\",\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603937730000,\n            \"effectiveDate\": 1603904400000\n        },\n        {\n            \"amount\": 100000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3132,\n            \"description\": \"(970416******6174) Giao dich tai NAPAS-ECOM              >  HANOI      VN so trace 775232 luc 2020-10-28 10:12:44\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1603818000000,\n            \"accountOwner\": null,\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603854790000,\n            \"effectiveDate\": 1603818000000\n        },\n        {\n            \"amount\": 100000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3131,\n            \"description\": \"(970416******6174) Giao dich tai NAPAS-ECOM              >  HANOI      VN so trace 380775 luc 2020-10-26 17:42:59\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1603645200000,\n            \"accountOwner\": null,\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603709007000,\n            \"effectiveDate\": 1603645200000\n        },\n        {\n            \"amount\": 67000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3130,\n            \"description\": \"9704xx6174 GD taiMC - MOCA trace 859511 ST 67000VND - 21/10/2020:025850\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1603386000000,\n            \"accountOwner\": \"BUI PHAM BAO YEN\",\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603417756000,\n            \"effectiveDate\": 1603386000000\n        },\n        {\n            \"amount\": 27000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3129,\n            \"description\": \"9704xx6174 GD taiMC - MOCA trace 651431 ST 27000VND - 18/10/2020:192250\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1603126800000,\n            \"accountOwner\": \"BUI PHAM BAO YEN\",\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603160193000,\n            \"effectiveDate\": 1603126800000\n        },\n        {\n            \"amount\": 200000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3128,\n            \"description\": \"Ok FT20294376070062 GD 069830-102020 03:57:40\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1603126800000,\n            \"accountOwner\": null,\n            \"type\": \"IN\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1603141061000,\n            \"effectiveDate\": 1603126800000\n        },\n        {\n            \"amount\": 6000000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3127,\n            \"description\": \"(970416******6174) Giao dich tai NAPAS-ECOM              >  HANOI      VN so trace 268293 luc 2020-10-13 10:25:10\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1602522000000,\n            \"accountOwner\": null,\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1602559533000,\n            \"effectiveDate\": 1602522000000\n        },\n        {\n            \"amount\": 5000000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3126,\n            \"description\": \"RUT TIEN TU VI MOMO 0345427009\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1602522000000,\n            \"accountOwner\": null,\n            \"type\": \"IN\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1602558233000,\n            \"effectiveDate\": 1602522000000\n        },\n        {\n            \"amount\": 9900,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3125,\n            \"description\": \" Thu Phi SMS thay doi so du thang  09/2020\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1602262800000,\n            \"accountOwner\": null,\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1602271401000,\n            \"effectiveDate\": 1602262800000\n        },\n        {\n            \"amount\": 90000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3124,\n            \"description\": \"9704xx6174 GD taiMC - MOCA trace 289991 ST 90000VND - 04/10/2020:095826\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1601917200000,\n            \"accountOwner\": \"BUI PHAM BAO YEN\",\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1601949982000,\n            \"effectiveDate\": 1601917200000\n        },\n        {\n            \"amount\": 106,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3123,\n            \"description\": \"##Lai nhap von#\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1601658000000,\n            \"accountOwner\": null,\n            \"type\": \"IN\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1601716115000,\n            \"effectiveDate\": 1601658000000\n        },\n        {\n            \"amount\": 314139,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3122,\n            \"description\": \"4221xx9898 GD taiPAYPAL *CONTABO trace 762183 ST 310414VND - 28/09/2020:122223\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1601485200000,\n            \"accountOwner\": \"TRAN THI NGOC THU\",\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1601520113000,\n            \"effectiveDate\": 1601485200000\n        },\n        {\n            \"amount\": 100000,\n            \"accountName\": \"TGTT KHTN (CA NHAN) VND\",\n            \"receiverName\": null,\n            \"transactionNumber\": 3121,\n            \"description\": \"(970416******6174) Giao dich tai NAPAS-ECOM              >  HANOI      VN so trace 529288 luc 2020-09-30 18:12:14\",\n            \"bankName\": null,\n            \"isOnline\": false,\n            \"postingDate\": 1601485200000,\n            \"accountOwner\": null,\n            \"type\": \"OUT\",\n            \"receiverAccountNumber\": \"\",\n            \"currency\": \"VND\",\n            \"account\": 1482597,\n            \"activeDatetime\": 1601464358000,\n            \"effectiveDate\": 1601485200000\n        }\n    ],\n    \"total\": 17,\n    \"page\": 1,\n    \"size\": 100\n}"
+				}
+			]
+		},
+		{
+			"name": "getBalance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"1482597\",\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/acb/getBalance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acb",
+						"getBalance"
+					]
+				},
+				"description": "accountNumber: \"\" để trống trường này nếu muốn lấy danh sách số dư các tài khoản hiện có"
+			},
+			"response": [
+				{
+					"name": "getBalance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"1482597\",\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/acb/getBalance",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acb",
+								"getBalance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "261"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"105-WhHRrbNOBHSZOvAxSpNtN3Rqb8E\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jan 2021 11:03:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"accountNumber\": \"1482597\",\n        \"accountDescription\": \"TGTT KHTN (CA NHAN) VND\",\n        \"owner\": \"NGUYEN VAN TAI\",\n        \"currency\": \"VND\",\n        \"balance\": 2669058,\n        \"totalBalance\": 2692920,\n        \"cardToken\": null,\n        \"status\": 1,\n        \"amountDue\": null,\n        \"dueDate\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getBankCode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/acb/getBankCode",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acb",
+						"getBankCode"
+					]
+				},
+				"description": "Dùng: napasBankCode"
+			},
+			"response": [
+				{
+					"name": "getBankCode",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/acb/getBankCode",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acb",
+								"getBankCode"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18439"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4807-culd2o9a6tNKuM+U3XAQA7F+Wv0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jan 2021 11:30:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"bank\": \"307\",\n            \"bankName\": \"ACB - NH TMCP A CHAU\",\n            \"napasBankCode\": \"970416\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/11_ACB.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"203\",\n            \"bankName\": \"VIETCOMBANK - NH TMCP NGOAI THUONG\",\n            \"napasBankCode\": \"970436\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/28.-vietcombank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"202\",\n            \"bankName\": \"BIDV - NH TMCP DAU TU VA PHAT TRIEN VN\",\n            \"napasBankCode\": \"970418\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/12.BIDV.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"201\",\n            \"bankName\": \"VIETINBANK - NH TMCP CONG THUONG\",\n            \"napasBankCode\": \"970415\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/10.Vietinbank_log.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"310\",\n            \"bankName\": \"TECHCOMBANK - NH TMCP KY THUONG\",\n            \"napasBankCode\": \"970407\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/06.Techcombank_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"303\",\n            \"bankName\": \"SACOMBANK - NH TMCP SAI GON THUONG TIN\",\n            \"napasBankCode\": \"970403\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/03.sacombank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"309\",\n            \"bankName\": \"VPBANK - NH TMCP VIET NAM THINH VUONG\",\n            \"napasBankCode\": \"970432\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/25.-VPBank_Ngân_Hàng_Việt_Nam_Thịnh_Vượng_Vector.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"305\",\n            \"bankName\": \"EXIMBANK - NH TMCP XUAT NHAP KHAU\",\n            \"napasBankCode\": \"970431\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/24.eximbank-logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"323\",\n            \"bankName\": \"ABBANK - NH TMCP AN BINH\",\n            \"napasBankCode\": \"970425\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/18.ABBank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"204\",\n            \"bankName\": \"AGRIBANK - NH NONG NGHIEP VA PHAT TRIEN NONG THON\",\n            \"napasBankCode\": \"970405\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/04.Aribank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"612\",\n            \"bankName\": \"BANGKOK BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/58.-bangkok-bank-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"620\",\n            \"bankName\": \"BANK OF CHINA\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/64.-bankofchina_LOGO.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"615\",\n            \"bankName\": \"BANK OF COMMUNICATIONS\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/60.-bank-of-communications-bank-of-china.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"659\",\n            \"bankName\": \"BANK OF INDIA\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/86.-bank-of-INDIA.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"622\",\n            \"bankName\": \"BANK OF TOKYO - MITSUBISHI\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/66.-tokyo-misubishi.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"614\",\n            \"bankName\": \"BNP PARIBAS BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/59.-bnp-paribas-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"601\",\n            \"bankName\": \"BPCEIOM\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/52.-BPCE-bank-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"359\",\n            \"bankName\": \"BVB - NH TMCP BAO VIET\",\n            \"napasBankCode\": \"970438\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/30.-BAOVIETBANK.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"313\",\n            \"bankName\": \"BacABank - NH TMCP Bắc Á\",\n            \"napasBankCode\": \"970409\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/45.-Bac-A_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"611\",\n            \"bankName\": \"CHINA CONSTRUCTION BANK CORP\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/57.-china-construction-bank.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"661\",\n            \"bankName\": \"CIMB - NH TNHH MTV CIMB\",\n            \"napasBankCode\": \"422589\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/01.cimb-bank-vietnam-logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"605\",\n            \"bankName\": \"CITI BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/55.-citi-bank.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"629\",\n            \"bankName\": \"CTBC BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/73.-CTBC-(logo).png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"619\",\n            \"bankName\": \"DEUTSCHE BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/63.-Deutsch-bank-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"304\",\n            \"bankName\": \"DONGABANK - NH TMCP DONG A\",\n            \"napasBankCode\": \"970406\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/05.-Dong-A.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"630\",\n            \"bankName\": \"FIRST COMMERCIAL BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/74.-firstbank.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"320\",\n            \"bankName\": \"GPBANK - NH TM TNHH MTV DAU KHI TOAN CAU\",\n            \"napasBankCode\": \"970408\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/07.GPBank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"301\",\n            \"bankName\": \"HABUBANK - NH TMCP NHA HA NOI\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/42.-Habubank.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"321\",\n            \"bankName\": \"HDBANK - NH TMCP PHAT TRIEN TP.HO CHI MINH\",\n            \"napasBankCode\": \"970437\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/29.-hdbank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"603\",\n            \"bankName\": \"HLB - NH TNHH MTV HONGLEONG VIET NAM\",\n            \"napasBankCode\": \"970442\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/34.-HLB_hong-leong-bank-squarelogo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"617\",\n            \"bankName\": \"HSBC - Ngân hàng TNHH MTV HSBC (Việt Nam)\",\n            \"napasBankCode\": \"458761\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/61.-hsbc-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"640\",\n            \"bankName\": \"HUA NAN COMMERCIAL BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/80-huananbank.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"641\",\n            \"bankName\": \"IBK - INDUSTRIAL BANK OF KOREA CN TP.HCM\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/43.-IBK_logo.jsp-copy.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"652\",\n            \"bankName\": \"IBK - NH CONG NGHIEP HAN QUOC CN HA NOI\",\n            \"napasBankCode\": \"970455\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/40.-IBK_logo.jsp.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"649\",\n            \"bankName\": \"INDUSTRIAL AND COMMERCIAL BANK OF CHINA\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/83-Industrial-Commercial-Bank-of-China-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"502\",\n            \"bankName\": \"IVB - NH TNHH INDOVINA\",\n            \"napasBankCode\": \"970434\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/27.-IVB_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"627\",\n            \"bankName\": \"JPMORGAN CHASE BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/71.-jpmorgan_logo.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"626\",\n            \"bankName\": \"KEB HANA BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/85-KEB-hanabank-Han-Quoc-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"701\",\n            \"bankName\": \"KHO BAC NHA NUOC\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/87.-kho-bac-nha-nuoc.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"353\",\n            \"bankName\": \"KLB - NH TMCP KIEN LONG\",\n            \"napasBankCode\": \"970452\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/38_kienlong.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"631\",\n            \"bankName\": \"KOOKMIN BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/75.-kb-kookmin-bank.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"357\",\n            \"bankName\": \"LPB - NH TMCP BUU DIEN LIEN VIET\",\n            \"napasBankCode\": \"970449\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/37.-LPB_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"635\",\n            \"bankName\": \"MALAYAN BANKING BERHAD - CN HCM\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/77.-MALAYSIAN-BANK-1.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"302\",\n            \"bankName\": \"MARITIMEBANK - NH TMCP HANG HAI\",\n            \"napasBankCode\": \"970426\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/19.maritime_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"609\",\n            \"bankName\": \"MAY BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/56.-MAY-BANK.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"311\",\n            \"bankName\": \"MB - NH TMCP QUAN DOI\",\n            \"napasBankCode\": \"970422\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/15.MBBank_Logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"205\",\n            \"bankName\": \"MHB - NH PHAT TRIEN NHA DONG BANG SONG CUU LONG\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/44.-MHB_Bank.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"639\",\n            \"bankName\": \"MIZUHO BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/79-MIZUHO-BANK.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"306\",\n            \"bankName\": \"NAMABANK - NH TMCP NAM A\",\n            \"napasBankCode\": \"970428\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/21.namabank_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"352\",\n            \"bankName\": \"NCB - NH TMCP QUOC DAN\",\n            \"napasBankCode\": \"970419\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/13.NCB_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"901\",\n            \"bankName\": \"NGAN HANG HOP TAC\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/88.-Co-op-bank---ngan-hang-hop-tac.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"207\",\n            \"bankName\": \"NH CHINH SACH XA HOI\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/47.-Ngan_hang_CSXHVN_logo.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"621\",\n            \"bankName\": \"NH CREDIT AGRICOLE CIB\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/65.-Credit-Agricole.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"650\",\n            \"bankName\": \"NH DBS BANK LTD\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/84-dbs-bank-logo.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"648\",\n            \"bankName\": \"NH DT&PT CAMPUCHIA\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/82-DT-PT-Campuchia-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"656\",\n            \"bankName\": \"NH HANA HAN QUOC\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/85-KEB-hanabank-Han-Quoc-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"628\",\n            \"bankName\": \"NH LIEN DOANH LAO - VIET\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/72.-LIEN-DOANH-LAO-VIET-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"623\",\n            \"bankName\": \"NH MEGA ICBC\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/67.-mega-international-commercial-bank-squarelogo-1451306131958.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"642\",\n            \"bankName\": \"NH TAIPEI FUBON COMMERCIAL BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/81-taiwan-fubon.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"315\",\n            \"bankName\": \"NH TMCP VUNG TAU\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/48.TMCP-VT.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"339\",\n            \"bankName\": \"NH TMCP XAY DUNG VIET NAM\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/50.-NH-TMCP-XÂY-DỰNG-VIỆT-NAM.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"602\",\n            \"bankName\": \"NH TNHH ANZ VIET NAM\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/53.-anz-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"333\",\n            \"bankName\": \"OCB - NH TMCP PHUONG DONG\",\n            \"napasBankCode\": \"970448\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/36.-OCB_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"319\",\n            \"bankName\": \"OCEANBANK - NH TMCP DAI DUONG\",\n            \"napasBankCode\": \"970414\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/09.Oceanbank_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"625\",\n            \"bankName\": \"OVERSEA-CHINESE BANKING\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/69.-OVERSEA-CHINESE-BANKING.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"501\",\n            \"bankName\": \"PBVN - NH TNHH MTV PUBLIC VIET NAM\",\n            \"napasBankCode\": \"970439\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/31.-public-bank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"341\",\n            \"bankName\": \"PGBANK - NH TMCP XANG DAU PETROLIMEX\",\n            \"napasBankCode\": \"970430\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/23.PGBank_Logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"346\",\n            \"bankName\": \"PVCOMBANK - NH TMCP DAI CHUNG VIET NAM\",\n            \"napasBankCode\": \"970412\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/08.Pvcombank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"308\",\n            \"bankName\": \"SAIGONBANK - NH TMCP SAI GON CONG THUONG\",\n            \"napasBankCode\": \"970400\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/02.saigon-TMCP-Congthuong.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"334\",\n            \"bankName\": \"SCB - NH TMCP SAI GON\",\n            \"napasBankCode\": \"970429\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/22.SCB_Logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"317\",\n            \"bankName\": \"SEABANK - NH TMCP DONG NAM A\",\n            \"napasBankCode\": \"970440\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/32.-Seabank_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"348\",\n            \"bankName\": \"SHB - NH TMCP SAI GON - HA NOI\",\n            \"napasBankCode\": \"970443\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/35.-SHB_Logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"616\",\n            \"bankName\": \"SHBVN - NH TNHH MTV SHINHAN VN\",\n            \"napasBankCode\": \"970424\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/17.shinhan-bank-logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"632\",\n            \"bankName\": \"SINOPAC BANK\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/76.-Bank-Sinopac.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"636\",\n            \"bankName\": \"SUMITOMO MITSUI BANKING CORPOR HCM\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/78-SUMITOMO-MITSUI-.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"624\",\n            \"bankName\": \"THE SHANGHAI COMMERCIAL & SAVINGS\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/68.-SHANG-HAI-COMMERCIAL-SAVING-BANK.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"504\",\n            \"bankName\": \"THE SIAM COMMERCIAL BANK PUBLIC\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/51.-Siam_logo.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"604\",\n            \"bankName\": \"TNHH MTV Standard Chartered Bank (Vietnam) Limited\",\n            \"napasBankCode\": \"970410\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/54.-Standard-Chartered-Bank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"358\",\n            \"bankName\": \"TPBANK - NH TMCP TIEN PHONG\",\n            \"napasBankCode\": \"970423\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/16.tpbank-logo_11-55-14_379x231.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"618\",\n            \"bankName\": \"UOB - NH TNHH MTV United Overseas Bank\",\n            \"napasBankCode\": \"970458\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/62.-United-overseas-bank-.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"355\",\n            \"bankName\": \"VAB - NH TMCP VIET A\",\n            \"napasBankCode\": \"970427\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/20.VAB-bank_logo.svg.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"208\",\n            \"bankName\": \"VDB - NH PHAT TRIEN VIET NAM\",\n            \"napasBankCode\": \"\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/46.-VDB.png\",\n            \"fastTransferSupported\": false\n        },\n        {\n            \"bank\": \"314\",\n            \"bankName\": \"VIB - NH TMCP QUOC TE VIET NAM\",\n            \"napasBankCode\": \"970441\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/33.-VIB_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"327\",\n            \"bankName\": \"VIET CAPITAL BANK - NH TMCP BAN VIET\",\n            \"napasBankCode\": \"970454\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/39.-VietcapitalBank_Logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"356\",\n            \"bankName\": \"VIETBANK - NH TMCP VIET NAM THUONG TIN\",\n            \"napasBankCode\": \"970433\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/26.-VIETBANK-logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"505\",\n            \"bankName\": \"VRB - NH LIEN DOANH VIET NGA\",\n            \"napasBankCode\": \"970421\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/14.VRB_Bank.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"637\",\n            \"bankName\": \"WOO - WOORI BANK\",\n            \"napasBankCode\": \"970457\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/41.-WOO_logo.png\",\n            \"fastTransferSupported\": true\n        },\n        {\n            \"bank\": \"662\",\n            \"bankName\": \"NONGHYUP - Chi nhánh HN\",\n            \"napasBankCode\": \"801011\",\n            \"thumbnail\": \"https://apiapp.acb.com.vn/mb/legacy/ss/cs/bankservice/media/bank/DEFAULT.png\",\n            \"fastTransferSupported\": true\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Make tranfer local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"tranfer_to\": \"\",\r\n    \"amount\": 10000,\r\n    \"message\": \"xin chao\",\r\n    \"otp_type\": \"SMS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/acb/tranfer_local",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acb",
+						"tranfer_local"
+					]
+				},
+				"description": "\"otp_type\": \"SMS|OTPS\""
+			},
+			"response": [
+				{
+					"name": "Make tranfer local",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"tranfer_to\": \"1287037\",\r\n    \"amount\": 10000,\r\n    \"message\": \"xin chao\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/acb/tranfer_local",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acb",
+								"tranfer_local"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "259"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"103-hp6ULVRfszeHTEGFlcem5QQIHq0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Oct 2020 10:17:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"tranfer_type\": \"local\",\n    \"time\": \"2020-10-29T17:17:06.694+07:00\",\n    \"codeStatus\": 200,\n    \"messageStatus\": \"success\",\n    \"description\": \"\",\n    \"took\": 138,\n    \"data\": {\n        \"edtOtp\": null,\n        \"isRequiredOTP\": true,\n        \"uuid\": \"d75d22e0-0ca2-423a-abe3-fea75363757d\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Make tranfer 247",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"napasBankCode\": \"\",\r\n    \"tranfer_to\": \"\",\r\n    \"amount\": 10000,\r\n    \"message\": \"xin chao\",\r\n    \"otp_type\": \"SMS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/acb/tranfer_247",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acb",
+						"tranfer_247"
+					]
+				},
+				"description": "\"otp_type\": \"SMS|OTPS\""
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm tranfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"uuid\": \"d75d22e0-0ca2-423a-abe3-fea75363757d\",\r\n    \"code\": \"3507001\",\r\n    \"otp_type\": \"SMS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/acb/confirm_tranfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acb",
+						"confirm_tranfer"
+					]
+				},
+				"description": "\"otp_type\": \"SMS|OTPS\""
+			},
+			"response": [
+				{
+					"name": "Confirm tranfer wrong OTP",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"uuid\": \"d75d22e0-0ca2-423a-abe3-fea75363757d\",\r\n    \"code\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/acb/confirm_tranfer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acb",
+								"confirm_tranfer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"75-cgI/pGUecclVg0gKfBeKgPDewJk\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Oct 2020 10:17:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Error: Confirm failed: 2019 | Có lỗi xảy ra trong quá trình thực hiện (2019)\"\n}"
+				},
+				{
+					"name": "Confirm tranfer success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"uuid\": \"d75d22e0-0ca2-423a-abe3-fea75363757d\",\r\n    \"code\": \"3507001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/acb/confirm_tranfer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acb",
+								"confirm_tranfer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2906"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b5a-5eGm/rz4lDEz6AsPvl66F257pco\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Oct 2020 10:18:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"tranfer_type\": \"local\",\n    \"authMethod\": \"SMS\",\n    \"uuid\": \"00b8c89f-9732-42a8-aba7-ec74cc1c1634\",\n    \"dateTime\": null,\n    \"menu\": \"14\",\n    \"amount\": \"10000\",\n    \"currency\": \"VND\",\n    \"aagUserInfo\": {\n        \"euserStatus\": \"ACT\",\n        \"verifyACBOContract\": true,\n        \"persNumber\": 7673855,\n        \"organization\": null,\n        \"branchCode\": 597,\n        \"contractNumber\": 5627103,\n        \"branchName\": \"ACB - PGD BIEN HOA\",\n        \"euserId\": 1944752,\n        \"fullName\": \"NGUYEN VAN TAI\",\n        \"employeeYN\": \"N\",\n        \"residentialTaxCountry\": \"VN\",\n        \"residentialTaxCountryName\": \"VIET NAM\",\n        \"contractStatus\": \"ACT\",\n        \"eUserStatus\": \"ACT\"\n    },\n    \"foreignCustomer\": false,\n    \"transactionHistory\": {\n        \"id\": \"00b8c89f-9732-42a8-aba7-ec74cc1c1634\",\n        \"appTransferType\": \"INTERNAL_ACCT\",\n        \"lateTransfer\": false,\n        \"foreignCustomer\": false,\n        \"createDate\": null,\n        \"updateDate\": null,\n        \"transactionStatus\": \"SUCCESS\",\n        \"transactionStatusDesc\": \"200\",\n        \"acctNbr\": \"1482597\",\n        \"erTxn\": \"3138\",\n        \"khId\": \"5627103\",\n        \"persNbr\": \"7673855\",\n        \"origPostDate\": null,\n        \"tranAmt\": \"10000\",\n        \"effDate\": 1603966708102,\n        \"rtxnDesc\": \"IB NGUYEN VAN TAI XIN CHAO\",\n        \"rtxnSourceCd\": \"MAPP\",\n        \"bodyContent\": \"{\\\"traceNumber\\\":\\\"00b8c89f-9732-42a8-aba7-ec74cc1c1634\\\",\\\"transactionDatetime\\\":1603966708505,\\\"debitAccount\\\":1482597,\\\"creditAccount\\\":1287037,\\\"amount\\\":10000,\\\"description\\\":\\\"IB NGUYEN VAN TAI XIN CHAO\\\",\\\"releaseHold\\\":{},\\\"serviceCharge\\\":{\\\"serviceChargeYN\\\":\\\"Y\\\",\\\"serviceChargePricingYN\\\":\\\"Y\\\",\\\"serviceChargeBranch\\\":\\\"597\\\",\\\"serviceChargeDebitAccount\\\":\\\"1482597\\\",\\\"serviceChargeDebitTransactionType\\\":\\\"SWTH\\\",\\\"serviceChargeAmount\\\":0,\\\"serviceChargeDescription\\\":\\\"Thu phi dich vu ACB Online\\\",\\\"netServiceChargeYN\\\":\\\"N\\\",\\\"serviceChargeDesctiption\\\":\\\"Thu phi dich vu ACB Online\\\"},\\\"userInformation\\\":{\\\"branch\\\":597,\\\"cashbox\\\":1952,\\\"transactionSource\\\":\\\"MAPP\\\"},\\\"entityAttributes\\\":[{},{\\\"entityAttributeCode\\\":\\\"BENPERNAME\\\",\\\"entityAttributeValue\\\":\\\"NGUYEN TIN ANH THU\\\"},{\\\"entityAttributeCode\\\":\\\"BANKNAME\\\",\\\"entityAttributeValue\\\":\\\"ACB - NH TMCP A CHAU\\\"}]}\",\n        \"traceNumber\": \"00b8c89f-9732-42a8-aba7-ec74cc1c1634\",\n        \"dinhKyYN\": false,\n        \"cost\": 0,\n        \"nguoiTh\": \"NGUYEN TIN ANH THU\",\n        \"receiveAcct\": \"1287037\",\n        \"nhanChiuPhi\": false,\n        \"soThamChieu\": \"\",\n        \"rtxnTypCd\": \"WTH\",\n        \"euserId\": \"1944752\"\n    },\n    \"type\": 1,\n    \"fromAccount\": \"1482597\",\n    \"transactionAmount\": 10000,\n    \"transactionType\": null,\n    \"receiverName\": \"NGUYEN TIN ANH THU\",\n    \"bankName\": \"ACB - NH TMCP A CHAU\",\n    \"receiverAddress\": null,\n    \"transferTime\": {\n        \"type\": 1,\n        \"period\": 0,\n        \"startDate\": 0,\n        \"endDate\": 0\n    },\n    \"fee\": 0,\n    \"feeTo\": 0,\n    \"comment\": \"IB NGUYEN VAN TAI XIN CHAO\",\n    \"resultToEmails\": [],\n    \"province\": \"\",\n    \"mbTransactionLimitInfo\": {\n        \"byPass\": 0,\n        \"bySMS\": 99970000,\n        \"byToken\": 0,\n        \"bySafeKey\": 0\n    },\n    \"accountInfo\": {\n        \"receiverName\": null,\n        \"accountNumber\": \"1287037\",\n        \"bankCode\": \"307\",\n        \"bankName\": \"ACB - NH TMCP A CHAU\",\n        \"branch\": null,\n        \"napasBankCode\": \"970416\",\n        \"bankcheckId\": 0\n    },\n    \"cardInfo\": null,\n    \"identityCardInfo\": null,\n    \"passportInfo\": null,\n    \"referenceNumber\": \"\",\n    \"preAuthorId\": \"fd322fb5-8cd3-4329-bb79-86d2195e9951\",\n    \"transactionId\": null,\n    \"transactionLimmitInfo\": null,\n    \"notTransferToMe\": true\n}"
+				}
+			]
+		}
+	]
+}

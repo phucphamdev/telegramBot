@@ -1,0 +1,1086 @@
+{
+	"info": {
+		"_postman_id": "91fea6ab-1205-4e04-ac37-8f48f16c8895",
+		"name": "localhost1368",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5537388"
+	},
+	"item": [
+		{
+			"name": "headerDefault",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sessionId",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refNo",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "deviceIdCommon",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/mbbank/headerDefault/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mbbank",
+						"headerDefault",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sessionId",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refNo",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "deviceIdCommon",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "MB%20Bank/2 CFNetwork/1331.0.3 Darwin/21.4.0",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic QURNSU46QURNSU4=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"0921137408\",\r\n    \"password\": \"Quan999999#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/mbbank/getHistory",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"mbbank",
+						"getHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.tungduy.com/api/captcha/mb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.tungduy.com/api/captcha/mb",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tungduy",
+						"com"
+					],
+					"path": [
+						"api",
+						"captcha",
+						"mb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.tungduy.com/api/captcha/mb",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "json => [\r\n    \"base64\" = \r\n]"
+				},
+				"url": {
+					"raw": "https://api.tungduy.com/api/captcha/mb",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tungduy",
+						"com"
+					],
+					"path": [
+						"api",
+						"captcha",
+						"mb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mb.test/getHistory.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"0921137408\",\r\n    \"account_no\": \"055018898888\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mb.test/getHistory.php",
+					"protocol": "http",
+					"host": [
+						"mb",
+						"test"
+					],
+					"path": [
+						"getHistory.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/mbbank/getHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "MB%20Bank/2 CFNetwork/1331.0.3 Darwin/21.4.0",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic QURNSU46QURNSU4=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"0921137408\",\r\n    \"password\": \"Quan999999#\",\r\n    \"account_no\" : \"055018898888\"\r\n}"
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/mbbank/getHistory",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"mbbank",
+						"getHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "MB%20Bank/2 CFNetwork/1331.0.3 Darwin/21.4.0",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic QURNSU46QURNSU4=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"0921137408\",\r\n    \"password\": \"Quan999999#\",\r\n    \"account_no\" : \"055018898888\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/mbbank/getHistory",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"mbbank",
+						"getHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/viettelpay/LoginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\": \"0938788091\",\r\n}"
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/viettelpay/LoginUser",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"viettelpay",
+						"LoginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/vpbank/doLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\" : \"\"\r\n}"
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/vpbank/doLogin",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"vpbank",
+						"doLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getHistory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/momo/lichsu",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"momo",
+						"lichsu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/vietcombank/getHistories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/vietcombank/getHistories",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"vietcombank",
+						"getHistories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/momo/doLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/momo/DoLogin",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"momo",
+						"DoLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "momoDoLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/momo/DoLogin",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"momo",
+						"DoLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jwt-register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "toidicodedao",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "toidicodedao",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "toidicodedao3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jwt-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "toidicodedao2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/auth/user-profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYWNlMTM2OC50ZXN0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY3MzgwMjMxLCJleHAiOjE2NjczODM4MzEsIm5iZiI6MTY2NzM4MDIzMSwianRpIjoiM0JqUEJNR3dUNGtHVVR6ayIsInN1YiI6NTksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.xSvJ5j2N57leXDBRx6d2RPhSG0LUxG5yjuAFyNIrH_4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/auth/user-profile",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"user-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jwt-refresh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYWNlMTM2OC50ZXN0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjY3MjczMjIxLCJleHAiOjE2NjcyNzY4MjEsIm5iZiI6MTY2NzI3MzIyMSwianRpIjoiNVplNE1oemZadDE3MjJrWSIsInN1YiI6IjU1IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.byF9d1MTQ9fEHbr_VVwkNBVk-cMulOP_oHeFTbaMzEA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/auth/refresh",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://ace1368.test/api/auth/change-pass",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYWNlMTM2OC50ZXN0L2FwaS9hdXRoL3JlZnJlc2giLCJpYXQiOjE2NjcyNzI1NzUsImV4cCI6MTY2NzI3NjE5NCwibmJmIjoxNjY3MjcyNTk0LCJqdGkiOiJjNTV5MUN0MTY1Yzd4VGs2Iiwic3ViIjoiNTUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PM1C2tFGFKhW6it8oI20hmhBtOxnc60ru9mVkSeHBoM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "old_password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "1234567",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/auth/change-pass",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"change-pass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sanctum register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "toidicodedao4",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "toidicodedao4@gmail.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "123456",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "toidicodedao",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "toidicodedao@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sanctum Load Users",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|xpKO99J5V6IevVoZetyIAC4sE2tZvligfnFUeHJO",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "toidicodedao_demo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/users/get",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"users",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sanstum GetDetail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|xpKO99J5V6IevVoZetyIAC4sE2tZvligfnFUeHJO",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://ace1368.test/api/users/getdetail/78",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"users",
+						"getdetail",
+						"78"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toidicodedao.clickapi/users/get",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|xpKO99J5V6IevVoZetyIAC4sE2tZvligfnFUeHJO",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "toidicodedao.click/api/users/get",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"users",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toidicodedao.click/api/users/getdetail/78",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "toidicodedao.click/api/users/getdetail/78",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"users",
+						"getdetail",
+						"78"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Infor_Acc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kind",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "camthao.tech",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "WWn0cQoNnBbw7vu1w0bdVVNkfhupTFZakyd",
+							"type": "text"
+						},
+						{
+							"key": "tranID",
+							"value": "323423",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "bank",
+							"type": "text"
+						},
+						{
+							"key": "bankCode",
+							"value": "10010",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "300000",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "qrcode",
+							"type": "text"
+						},
+						{
+							"key": "accessToken",
+							"value": "AmtPWOZBvHVWdA2aG1O9LyXXPL6kFwNaHGFLUczB1EBZ5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/recharge/create_recharge",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"recharge",
+						"create_recharge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_recharge_result",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "errorCode",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "errorDescription",
+							"value": "No Data",
+							"type": "text"
+						},
+						{
+							"key": "infomationAccount",
+							"value": "{\"name\":\"xdsdfsdfsd\",\"full_name\":\"sdfsdfsdfsdf\",\"branch\":\"sdfsdfsdfsdf\",\"number1\":\"234234234\",\"number2\":\"23423434234234234234\",\"desc\":\"dfssdfsdf\",\"qrcode\":\"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIHZpZXdCb3g9IjAgMCAzMDAgMzAwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2ZmZmZmZiIvPjxnIHRyYW5zZm9ybT0ic2NhbGUoNi42NjcpIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLDApIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAwTDEyIDJMMTAgMkwxMCAzTDggM0w4IDRMMTAgNEwxMCA3TDkgN0w5IDVMOCA1TDggN0w5IDdMOSA4TDYgOEw2IDlMOSA5TDkgMTBMMTAgMTBMMTAgMTFMOSAxMUw5IDEyTDggMTJMOCAxMUw3IDExTDcgMTBMNiAxMEw2IDExTDUgMTFMNSAxM0w0IDEzTDQgMTJMMyAxMkwzIDExTDQgMTFMNCA5TDUgOUw1IDhMMCA4TDAgOUwxIDlMMSAxMEwwIDEwTDAgMTJMMyAxMkwzIDEzTDEgMTNMMSAxNUwyIDE1TDIgMTZMMCAxNkwwIDE3TDEgMTdMMSAxOEwwIDE4TDAgMjBMMSAyMEwxIDIxTDAgMjFMMCAyNUwxIDI1TDEgMjRMMiAyNEwyIDI2TDMgMjZMMyAyN0wxIDI3TDEgMjZMMCAyNkwwIDI5TDEgMjlMMSAzMEwyIDMwTDIgMzFMMyAzMUwzIDMzTDIgMzNMMiAzMkwxIDMyTDEgMzFMMCAzMUwwIDMzTDEgMzNMMSAzNEw0IDM0TDQgMzVMMSAzNUwxIDM2TDAgMzZMMCAzN0wxIDM3TDEgMzZMMyAzNkwzIDM3TDUgMzdMNSAzM0w3IDMzTDcgMzJMNiAzMkw2IDMxTDcgMzFMNyAzMEw2IDMwTDYgMjlMOCAyOUw4IDI3TDcgMjdMNyAyNkw5IDI2TDkgMjdMMTAgMjdMMTAgMjhMOSAyOEw5IDI5TDEwIDI5TDEwIDI4TDExIDI4TDExIDI3TDEyIDI3TDEyIDI4TDEzIDI4TDEzIDI3TDE2IDI3TDE2IDI2TDEzIDI2TDEzIDI1TDE3IDI1TDE3IDI3TDE5IDI3TDE5IDI2TDIwIDI2TDIwIDI1TDIxIDI1TDIxIDI2TDI1IDI2TDI1IDI3TDI0IDI3TDI0IDI4TDI1IDI4TDI1IDI5TDI0IDI5TDI0IDMwTDIzIDMwTDIzIDI5TDIxIDI5TDIxIDMwTDIwIDMwTDIwIDI4TDE1IDI4TDE1IDI5TDE0IDI5TDE0IDMwTDE1IDMwTDE1IDI5TDE3IDI5TDE3IDMwTDE2IDMwTDE2IDMxTDE1IDMxTDE1IDMzTDE5IDMzTDE5IDM0TDE4IDM0TDE4IDM1TDE3IDM1TDE3IDM0TDE2IDM0TDE2IDM1TDE0IDM1TDE0IDM2TDEzIDM2TDEzIDM3TDExIDM3TDExIDM2TDEyIDM2TDEyIDM1TDExIDM1TDExIDM2TDEwIDM2TDEwIDM1TDkgMzVMOSAzMkwxMCAzMkwxMCAzM0wxMSAzM0wxMSAzNEwxMiAzNEwxMiAzM0wxMyAzM0wxMyAzNEwxNCAzNEwxNCAzM0wxMyAzM0wxMyAzMkwxNCAzMkwxNCAzMUwxMyAzMUwxMyAyOUwxMSAyOUwxMSAzMkwxMCAzMkwxMCAzMUw5IDMxTDkgMzBMOCAzMEw4IDM1TDkgMzVMOSAzNkwxMCAzNkwxMCAzN0w4IDM3TDggMzlMOSAzOUw5IDQwTDggNDBMOCA0NUwxMiA0NUwxMiA0NEwxMyA0NEwxMyA0NUwxNCA0NUwxNCA0NEwxNSA0NEwxNSA0NUwyMCA0NUwyMCA0NEwyMSA0NEwyMSA0NUwyMyA0NUwyMyA0NEwyNCA0NEwyNCA0NUwyNSA0NUwyNSA0NEwyNCA0NEwyNCA0M0wyNSA0M0wyNSA0MkwyNiA0MkwyNiA0M0wyOCA0M0wyOCA0NEwyNiA0NEwyNiA0NUwyOCA0NUwyOCA0NEwyOSA0NEwyOSA0NUwzMCA0NUwzMCA0NEwzMyA0NEwzMyA0NUw0MiA0NUw0MiA0NEw0MyA0NEw0MyA0NUw0NCA0NUw0NCA0NEw0MyA0NEw0MyA0M0w0MiA0M0w0MiA0Mkw0NCA0Mkw0NCA0M0w0NSA0M0w0NSA0Mkw0NCA0Mkw0NCA0MUw0MiA0MUw0MiA0MEw0MyA0MEw0MyAzOUw0NCAzOUw0NCA0MEw0NSA0MEw0NSAzOUw0NCAzOUw0NCAzOEw0NSAzOEw0NSAzN0w0NCAzN0w0NCAzOEw0MyAzOEw0MyAzN0w0MiAzN0w0MiAzNkw0MyAzNkw0MyAzNUw0NCAzNUw0NCAzNkw0NSAzNkw0NSAzNUw0NCAzNUw0NCAzNEw0NSAzNEw0NSAzM0w0NCAzM0w0NCAzMEw0NSAzMEw0NSAyN0w0MiAyN0w0MiAyOEw0MCAyOEw0MCAyN0w0MSAyN0w0MSAyNkw0MCAyNkw0MCAyNUw0MSAyNUw0MSAyNEw0MyAyNEw0MyAyMkw0NSAyMkw0NSAyMUw0MyAyMUw0MyAyMkw0MiAyMkw0MiAyMUw0MSAyMUw0MSAxOEw0MCAxOEw0MCAxN0wzOSAxN0wzOSAxNkw0NCAxNkw0NCAxNUw0MyAxNUw0MyAxM0w0NCAxM0w0NCAxNEw0NSAxNEw0NSAxMUw0NCAxMUw0NCAxMEw0NSAxMEw0NSA5TDQ0IDlMNDQgOEw0MyA4TDQzIDlMNDIgOUw0MiA4TDQxIDhMNDEgOUw0MiA5TDQyIDEwTDQzIDEwTDQzIDExTDQyIDExTDQyIDEyTDQxIDEyTDQxIDExTDQwIDExTDQwIDEyTDM5IDEyTDM5IDEzTDQwIDEzTDQwIDE0TDM3IDE0TDM3IDEzTDM1IDEzTDM1IDE0TDMzIDE0TDMzIDEzTDMyIDEzTDMyIDE0TDMzIDE0TDMzIDE1TDMyIDE1TDMyIDE2TDMxIDE2TDMxIDE1TDMwIDE1TDMwIDE0TDMxIDE0TDMxIDEyTDMzIDEyTDMzIDExTDM2IDExTDM2IDEyTDM4IDEyTDM4IDExTDM5IDExTDM5IDEwTDQwIDEwTDQwIDhMMzkgOEwzOSAxMEwzOCAxMEwzOCA4TDM3IDhMMzcgOUwzNSA5TDM1IDEwTDM0IDEwTDM0IDhMMzMgOEwzMyA2TDMyIDZMMzIgOEwzMCA4TDMwIDdMMzEgN0wzMSA2TDMwIDZMMzAgNUwzMSA1TDMxIDRMMzAgNEwzMCAzTDM0IDNMMzQgMUwzMyAxTDMzIDJMMzAgMkwzMCAzTDI5IDNMMjkgMkwyOCAyTDI4IDNMMjQgM0wyNCA0TDIzIDRMMjMgM0wyMiAzTDIyIDFMMjMgMUwyMyAyTDI3IDJMMjcgMUwzMiAxTDMyIDBMMjcgMEwyNyAxTDI2IDFMMjYgMEwyNSAwTDI1IDFMMjMgMUwyMyAwTDIyIDBMMjIgMUwyMCAxTDIwIDBMMTkgMEwxOSAxTDE4IDFMMTggMkwxOSAyTDE5IDFMMjAgMUwyMCAyTDIxIDJMMjEgM0wyMCAzTDIwIDhMMTkgOEwxOSA1TDE4IDVMMTggNEwxOSA0TDE5IDNMMTcgM0wxNyAyTDE2IDJMMTYgM0wxNSAzTDE1IDRMMTQgNEwxNCAzTDEzIDNMMTMgMkwxNCAyTDE0IDFMMTMgMUwxMyAwWk0xNSAwTDE1IDFMMTYgMUwxNiAwWk0zNiAwTDM2IDFMMzUgMUwzNSA0TDM0IDRMMzQgNUwzNyA1TDM3IDNMMzYgM0wzNiAxTDM3IDFMMzcgMFpNOCAxTDggMkw5IDJMOSAxWk0xMSAzTDExIDVMMTQgNUwxNCA0TDEzIDRMMTMgM1pNMjggM0wyOCA0TDI5IDRMMjkgNUwyOCA1TDI4IDZMMjcgNkwyNyA3TDI2IDdMMjYgNkwyNSA2TDI1IDhMMjcgOEwyNyA5TDI2IDlMMjYgMTBMMjUgMTBMMjUgOUwyMiA5TDIyIDEwTDIzIDEwTDIzIDExTDIwIDExTDIwIDlMMTYgOUwxNiA4TDE4IDhMMTggNkwxNyA2TDE3IDdMMTYgN0wxNiA1TDE3IDVMMTcgNEwxNSA0TDE1IDdMMTYgN0wxNiA4TDE1IDhMMTUgOUwxMiA5TDEyIDhMMTQgOEwxNCA2TDEzIDZMMTMgN0wxMiA3TDEyIDZMMTEgNkwxMSA3TDEwIDdMMTAgOEwxMSA4TDExIDlMMTAgOUwxMCAxMEwxMiAxMEwxMiAxMUwxMyAxMUwxMyAxMkwxMiAxMkwxMiAxNkwxMyAxNkwxMyAxN0wxMiAxN0wxMiAxOEwxMyAxOEwxMyAyMUwxMiAyMUwxMiAxOUwxMCAxOUwxMCAxOEw4IDE4TDggMTdMMTEgMTdMMTEgMTVMMTAgMTVMMTAgMTRMOSAxNEw5IDE1TDEwIDE1TDEwIDE2TDggMTZMOCAxN0w2IDE3TDYgMThMOCAxOEw4IDE5TDYgMTlMNiAyMEw4IDIwTDggMTlMOSAxOUw5IDIwTDEwIDIwTDEwIDIxTDkgMjFMOSAyMkwxMCAyMkwxMCAyM0wxMSAyM0wxMSAyNEw5IDI0TDkgMjZMMTAgMjZMMTAgMjdMMTEgMjdMMTEgMjZMMTIgMjZMMTIgMjVMMTEgMjVMMTEgMjRMMTQgMjRMMTQgMjNMMTMgMjNMMTMgMjJMMTQgMjJMMTQgMjFMMTUgMjFMMTUgMjJMMTYgMjJMMTYgMjNMMTUgMjNMMTUgMjRMMTcgMjRMMTcgMjNMMTggMjNMMTggMjRMMTkgMjRMMTkgMjVMMTggMjVMMTggMjZMMTkgMjZMMTkgMjVMMjAgMjVMMjAgMjJMMTkgMjJMMTkgMjFMMjAgMjFMMjAgMjBMMjQgMjBMMjQgMThMMjUgMThMMjUgMjJMMjggMjJMMjggMjNMMjYgMjNMMjYgMjRMMjUgMjRMMjUgMjVMMjYgMjVMMjYgMjZMMjcgMjZMMjcgMjdMMjUgMjdMMjUgMjhMMjggMjhMMjggMjlMMjkgMjlMMjkgMzBMMjggMzBMMjggMzFMMjkgMzFMMjkgMzJMMjcgMzJMMjcgMzFMMjUgMzFMMjUgMzBMMjcgMzBMMjcgMjlMMjUgMjlMMjUgMzBMMjQgMzBMMjQgMzFMMjMgMzFMMjMgMzBMMjIgMzBMMjIgMzFMMjAgMzFMMjAgMzBMMTkgMzBMMTkgMjlMMTggMjlMMTggMzBMMTcgMzBMMTcgMzFMMTYgMzFMMTYgMzJMMTcgMzJMMTcgMzFMMTggMzFMMTggMzJMMTkgMzJMMTkgMzNMMjMgMzNMMjMgMzRMMjEgMzRMMjEgMzVMMjAgMzVMMjAgMzRMMTkgMzRMMTkgMzVMMTggMzVMMTggMzZMMTkgMzZMMTkgMzdMMTYgMzdMMTYgMzZMMTcgMzZMMTcgMzVMMTYgMzVMMTYgMzZMMTQgMzZMMTQgMzdMMTMgMzdMMTMgMzhMMTQgMzhMMTQgMzdMMTUgMzdMMTUgMzhMMjAgMzhMMjAgMzZMMjQgMzZMMjQgMzVMMjYgMzVMMjYgMzZMMjUgMzZMMjUgMzhMMjcgMzhMMjcgMzlMMjYgMzlMMjYgNDBMMjUgNDBMMjUgNDFMMjEgNDFMMjEgNDJMMTkgNDJMMTkgNDFMMjAgNDFMMjAgNDBMMTkgNDBMMTkgNDFMMTYgNDFMMTYgNDBMMTggNDBMMTggMzlMMTUgMzlMMTUgNDFMMTMgNDFMMTMgNDJMMTkgNDJMMTkgNDRMMjAgNDRMMjAgNDNMMjEgNDNMMjEgNDRMMjIgNDRMMjIgNDJMMjUgNDJMMjUgNDFMMjYgNDFMMjYgNDJMMjggNDJMMjggNDNMMjkgNDNMMjkgNDRMMzAgNDRMMzAgNDNMMzEgNDNMMzEgNDJMMzAgNDJMMzAgNDNMMjkgNDNMMjkgNDJMMjggNDJMMjggNDFMMzEgNDFMMzEgNDBMMzIgNDBMMzIgNDNMMzQgNDNMMzQgNDRMMzYgNDRMMzYgNDJMMzcgNDJMMzcgNDNMMzggNDNMMzggNDRMMzkgNDRMMzkgNDNMMzggNDNMMzggNDJMMzkgNDJMMzkgNDFMMzggNDFMMzggNDJMMzcgNDJMMzcgNDFMMzYgNDFMMzYgMzlMMzQgMzlMMzQgMzhMMzUgMzhMMzUgMzdMMzYgMzdMMzYgMzZMMzcgMzZMMzcgMzVMMzkgMzVMMzkgMzZMNDIgMzZMNDIgMzVMNDMgMzVMNDMgMzRMNDIgMzRMNDIgMzNMNDMgMzNMNDMgMzJMNDIgMzJMNDIgMzFMNDAgMzFMNDAgMzJMMzggMzJMMzggMzFMMzkgMzFMMzkgMzBMNDEgMzBMNDEgMjlMNDAgMjlMNDAgMjhMMzggMjhMMzggMjlMMzYgMjlMMzYgMjhMMzcgMjhMMzcgMjdMMzkgMjdMMzkgMjZMMzggMjZMMzggMjVMMzYgMjVMMzYgMjJMMzUgMjJMMzUgMjFMMzYgMjFMMzYgMjBMMzQgMjBMMzQgMTlMMzMgMTlMMzMgMjBMMzIgMjBMMzIgMTlMMzEgMTlMMzEgMThMMzAgMThMMzAgMTdMMjkgMTdMMjkgMTZMMjcgMTZMMjcgMTVMMjkgMTVMMjkgMTRMMzAgMTRMMzAgMTJMMjggMTJMMjggMTFMMzEgMTFMMzEgMTBMMzIgMTBMMzIgOUwzMyA5TDMzIDhMMzIgOEwzMiA5TDMxIDlMMzEgMTBMMjkgMTBMMjkgOEwyNyA4TDI3IDdMMjggN0wyOCA2TDI5IDZMMjkgN0wzMCA3TDMwIDZMMjkgNkwyOSA1TDMwIDVMMzAgNEwyOSA0TDI5IDNaTTI1IDRMMjUgNUwyNyA1TDI3IDRaTTMyIDRMMzIgNUwzMyA1TDMzIDRaTTIxIDVMMjEgOEwyNCA4TDI0IDVaTTIyIDZMMjIgN0wyMyA3TDIzIDZaTTM0IDZMMzQgN0wzNSA3TDM1IDhMMzYgOEwzNiA3TDM3IDdMMzcgNkwzNiA2TDM2IDdMMzUgN0wzNSA2Wk0xMSA3TDExIDhMMTIgOEwxMiA3Wk0yIDlMMiAxMEwxIDEwTDEgMTFMMiAxMUwyIDEwTDMgMTBMMyA5Wk0yNyA5TDI3IDEwTDI2IDEwTDI2IDExTDI1IDExTDI1IDEwTDI0IDEwTDI0IDExTDI1IDExTDI1IDEyTDI0IDEyTDI0IDEzTDI1IDEzTDI1IDEyTDI2IDEyTDI2IDExTDI3IDExTDI3IDEwTDI4IDEwTDI4IDlaTTQzIDlMNDMgMTBMNDQgMTBMNDQgOVpNMTMgMTBMMTMgMTFMMTQgMTFMMTQgMTJMMTYgMTJMMTYgMTNMMTkgMTNMMTkgMTJMMTggMTJMMTggMTFMMTkgMTFMMTkgMTBMMTggMTBMMTggMTFMMTcgMTFMMTcgMTBMMTUgMTBMMTUgMTFMMTQgMTFMMTQgMTBaTTM2IDEwTDM2IDExTDM3IDExTDM3IDEwWk02IDExTDYgMTJMNyAxMkw3IDExWk0xNiAxMUwxNiAxMkwxNyAxMkwxNyAxMVpNNDMgMTFMNDMgMTJMNDIgMTJMNDIgMTNMNDEgMTNMNDEgMTJMNDAgMTJMNDAgMTNMNDEgMTNMNDEgMTRMNDAgMTRMNDAgMTVMNDEgMTVMNDEgMTRMNDIgMTRMNDIgMTNMNDMgMTNMNDMgMTJMNDQgMTJMNDQgMTFaTTkgMTJMOSAxM0wxMCAxM0wxMCAxMlpNMjAgMTJMMjAgMTRMMTUgMTRMMTUgMTNMMTQgMTNMMTQgMTRMMTUgMTRMMTUgMTVMMjMgMTVMMjMgMTRMMjIgMTRMMjIgMTNMMjMgMTNMMjMgMTJMMjIgMTJMMjIgMTNMMjEgMTNMMjEgMTJaTTI3IDEyTDI3IDE0TDI0IDE0TDI0IDE2TDIwIDE2TDIwIDE3TDIxIDE3TDIxIDE4TDE4IDE4TDE4IDE3TDE5IDE3TDE5IDE2TDE1IDE2TDE1IDE5TDE0IDE5TDE0IDIwTDE1IDIwTDE1IDIxTDE5IDIxTDE5IDE5TDIzIDE5TDIzIDE4TDIyIDE4TDIyIDE3TDI0IDE3TDI0IDE2TDI2IDE2TDI2IDE1TDI3IDE1TDI3IDE0TDI4IDE0TDI4IDEyWk0zIDEzTDMgMTRMMiAxNEwyIDE1TDMgMTVMMyAxNEw0IDE0TDQgMTVMNSAxNUw1IDE0TDcgMTRMNyAxNUw2IDE1TDYgMTZMNyAxNkw3IDE1TDggMTVMOCAxNEw3IDE0TDcgMTNMNSAxM0w1IDE0TDQgMTRMNCAxM1pNMzUgMTRMMzUgMTVMMzQgMTVMMzQgMTZMMzYgMTZMMzYgMTdMMzcgMTdMMzcgMTZMMzkgMTZMMzkgMTVMMzcgMTVMMzcgMTRaTTEzIDE1TDEzIDE2TDE0IDE2TDE0IDE1Wk0zNiAxNUwzNiAxNkwzNyAxNkwzNyAxNVpNMyAxNkwzIDE3TDQgMTdMNCAxOEwyIDE4TDIgMTlMMSAxOUwxIDIwTDIgMjBMMiAyMUwxIDIxTDEgMjNMMiAyM0wyIDI0TDMgMjRMMyAyNkw1IDI2TDUgMjlMNCAyOUw0IDI4TDMgMjhMMyAyOUwyIDI5TDIgMjhMMSAyOEwxIDI5TDIgMjlMMiAzMEwzIDMwTDMgMzFMNCAzMUw0IDMzTDUgMzNMNSAzMUw2IDMxTDYgMzBMNSAzMEw1IDI5TDYgMjlMNiAyOEw3IDI4TDcgMjdMNiAyN0w2IDI2TDcgMjZMNyAyNUw2IDI1TDYgMjZMNSAyNkw1IDI1TDQgMjVMNCAyM0wzIDIzTDMgMjJMMiAyMkwyIDIxTDQgMjFMNCAyMEw1IDIwTDUgMTdMNCAxN0w0IDE2Wk0zMiAxNkwzMiAxN0wzMyAxN0wzMyAxNlpNMTMgMTdMMTMgMThMMTQgMThMMTQgMTdaTTE2IDE3TDE2IDE4TDE3IDE4TDE3IDE3Wk0yNSAxN0wyNSAxOEwyNiAxOEwyNiAxOUwyOCAxOUwyOCAyMEwyNiAyMEwyNiAyMUwyOCAyMUwyOCAyMkwyOSAyMkwyOSAyM0wyOCAyM0wyOCAyNEwyOSAyNEwyOSAyM0wzMCAyM0wzMCAyNEwzMSAyNEwzMSAyNUwzMCAyNUwzMCAyNkwyOSAyNkwyOSAyNUwyNyAyNUwyNyAyNEwyNiAyNEwyNiAyNUwyNyAyNUwyNyAyNkwyOSAyNkwyOSAyN0wyOCAyN0wyOCAyOEwyOSAyOEwyOSAyOUwzMCAyOUwzMCAzMEwyOSAzMEwyOSAzMUwzMCAzMUwzMCAzMEwzMSAzMEwzMSAyOUwzMCAyOUwzMCAyOEwzMyAyOEwzMyAyOUwzMiAyOUwzMiAzMEwzMyAzMEwzMyAzMUwzMiAzMUwzMiAzMkwzMSAzMkwzMSAzM0wzMCAzM0wzMCAzNEwzMSAzNEwzMSAzNUwyOCAzNUwyOCAzNkwyNyAzNkwyNyAzOEwyOCAzOEwyOCAzNkwzMCAzNkwzMCAzOEwyOSAzOEwyOSAzOUwyNyAzOUwyNyA0MEwyOSA0MEwyOSAzOUwzMCAzOUwzMCA0MEwzMSA0MEwzMSAzOUwzMCAzOUwzMCAzOEwzMSAzOEwzMSAzNUwzMiAzNUwzMiAzNkwzMyAzNkwzMyAzNUwzNSAzNUwzNSAzNkwzNiAzNkwzNiAzNUwzNyAzNUwzNyAzNEwzOSAzNEwzOSAzNUw0MCAzNUw0MCAzM0w0MSAzM0w0MSAzMkw0MCAzMkw0MCAzM0wzNyAzM0wzNyAzMUwzOCAzMUwzOCAzMEwzNiAzMEwzNiAzMUwzNSAzMUwzNSAzMEwzMyAzMEwzMyAyOUwzNSAyOUwzNSAyOEwzNiAyOEwzNiAyN0wzNyAyN0wzNyAyNkwzNCAyNkwzNCAyNEwzNSAyNEwzNSAyMkwzMyAyMkwzMyAyMUwzMiAyMUwzMiAyM0wzMCAyM0wzMCAyMkwzMSAyMkwzMSAyMUwzMCAyMUwzMCAyMkwyOSAyMkwyOSAyMUwyOCAyMUwyOCAyMEwyOSAyMEwyOSAxOUwyOCAxOUwyOCAxOEwyOSAxOEwyOSAxN0wyOCAxN0wyOCAxOEwyNiAxOEwyNiAxN1pNMzQgMTdMMzQgMThMMzUgMThMMzUgMTlMMzcgMTlMMzcgMjBMNDAgMjBMNDAgMTlMMzggMTlMMzggMThMMzkgMThMMzkgMTdMMzggMTdMMzggMThMMzUgMThMMzUgMTdaTTQ0IDE3TDQ0IDE4TDQzIDE4TDQzIDE5TDQyIDE5TDQyIDIwTDQzIDIwTDQzIDE5TDQ0IDE5TDQ0IDIwTDQ1IDIwTDQ1IDE5TDQ0IDE5TDQ0IDE4TDQ1IDE4TDQ1IDE3Wk0yIDE5TDIgMjBMNCAyMEw0IDE5Wk0xNSAxOUwxNSAyMEwxOCAyMEwxOCAxOVpNMzAgMTlMMzAgMjBMMzEgMjBMMzEgMTlaTTUgMjFMNSAyNEw4IDI0TDggMjFaTTIxIDIxTDIxIDI0TDI0IDI0TDI0IDIxWk0zNyAyMUwzNyAyNEw0MCAyNEw0MCAyMVpNNiAyMkw2IDIzTDcgMjNMNyAyMlpNMTggMjJMMTggMjNMMTkgMjNMMTkgMjJaTTIyIDIyTDIyIDIzTDIzIDIzTDIzIDIyWk0zOCAyMkwzOCAyM0wzOSAyM0wzOSAyMlpNMzIgMjNMMzIgMjVMMzEgMjVMMzEgMjZMMzAgMjZMMzAgMjdMMjkgMjdMMjkgMjhMMzAgMjhMMzAgMjdMMzEgMjdMMzEgMjZMMzMgMjZMMzMgMjRMMzQgMjRMMzQgMjNaTTQ0IDIzTDQ0IDI0TDQ1IDI0TDQ1IDIzWk00MiAyNUw0MiAyNkw0MyAyNkw0MyAyNVpNNDQgMjVMNDQgMjZMNDUgMjZMNDUgMjVaTTIxIDI3TDIxIDI4TDIyIDI4TDIyIDI3Wk0zNCAyN0wzNCAyOEwzNSAyOEwzNSAyN1pNNDIgMjhMNDIgMjlMNDQgMjlMNDQgMjhaTTE4IDMwTDE4IDMxTDE5IDMxTDE5IDMyTDIwIDMyTDIwIDMxTDE5IDMxTDE5IDMwWk0xMiAzMUwxMiAzMkwxMSAzMkwxMSAzM0wxMiAzM0wxMiAzMkwxMyAzMkwxMyAzMVpNMjQgMzFMMjQgMzJMMjMgMzJMMjMgMzNMMjQgMzNMMjQgMzRMMjYgMzRMMjYgMzVMMjcgMzVMMjcgMzRMMjggMzRMMjggMzNMMjcgMzNMMjcgMzJMMjUgMzJMMjUgMzFaTTM0IDMxTDM0IDMyTDM1IDMyTDM1IDMzTDMzIDMzTDMzIDMyTDMyIDMyTDMyIDMzTDMxIDMzTDMxIDM0TDM1IDM0TDM1IDM1TDM2IDM1TDM2IDM0TDM1IDM0TDM1IDMzTDM2IDMzTDM2IDMyTDM1IDMyTDM1IDMxWk0yNCAzMkwyNCAzM0wyNSAzM0wyNSAzMlpNMjYgMzNMMjYgMzRMMjcgMzRMMjcgMzNaTTYgMzRMNiAzNUw3IDM1TDcgMzRaTTE5IDM1TDE5IDM2TDIwIDM2TDIwIDM1Wk02IDM2TDYgMzdMNyAzN0w3IDM2Wk0yMSAzN0wyMSA0MEwyNCA0MEwyNCAzN1pNMzIgMzdMMzIgMzhMMzMgMzhMMzMgMzdaTTM3IDM3TDM3IDQwTDQwIDQwTDQwIDM3Wk00MSAzN0w0MSA0MEw0MiA0MEw0MiAzOUw0MyAzOUw0MyAzOEw0MiAzOEw0MiAzN1pNOSAzOEw5IDM5TDExIDM5TDExIDM4Wk0yMiAzOEwyMiAzOUwyMyAzOUwyMyAzOFpNMzggMzhMMzggMzlMMzkgMzlMMzkgMzhaTTEzIDM5TDEzIDQwTDE0IDQwTDE0IDM5Wk0zMiAzOUwzMiA0MEwzMyA0MEwzMyA0MUwzNSA0MUwzNSA0MEwzMyA0MEwzMyAzOVpNOSA0MEw5IDQxTDEwIDQxTDEwIDQyTDkgNDJMOSA0NEwxMiA0NEwxMiA0M0wxMSA0M0wxMSA0MkwxMiA0MkwxMiA0MUwxMSA0MUwxMSA0MFpNNDEgNDFMNDEgNDJMNDAgNDJMNDAgNDNMNDEgNDNMNDEgNDRMNDIgNDRMNDIgNDNMNDEgNDNMNDEgNDJMNDIgNDJMNDIgNDFaTTM0IDQyTDM0IDQzTDM1IDQzTDM1IDQyWk0xMyA0M0wxMyA0NEwxNCA0NEwxNCA0M1pNMTUgNDNMMTUgNDRMMTggNDRMMTggNDNaTTAgMEwwIDdMNyA3TDcgMFpNMSAxTDEgNkw2IDZMNiAxWk0yIDJMMiA1TDUgNUw1IDJaTTM4IDBMMzggN0w0NSA3TDQ1IDBaTTM5IDFMMzkgNkw0NCA2TDQ0IDFaTTQwIDJMNDAgNUw0MyA1TDQzIDJaTTAgMzhMMCA0NUw3IDQ1TDcgMzhaTTEgMzlMMSA0NEw2IDQ0TDYgMzlaTTIgNDBMMiA0M0w1IDQzTDUgNDBaIiBmaWxsPSIjMDAwMDAwIi8\"}",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "300000",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "ACE13168 ACB300k demo",
+							"type": "text"
+						},
+						{
+							"key": "qrcode",
+							"value": "qrcode",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "bank",
+							"type": "text"
+						},
+						{
+							"key": "bankCode",
+							"value": "10010",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://toidicodedao.click/api/recharge/create_recharge_result",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"recharge",
+						"create_recharge_result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api_tpbank_doLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://toidicodedao.click/api/tpbank/doLogin",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"doLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api_tpbank_getInfor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://toidicodedao.click/api/tpbank/getInfo",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"getInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api_tpbank_getListBank",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://toidicodedao.click/api/tpbank/getListBank",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"getListBank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api_tpbank_getHistories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://toidicodedao.click/api/tpbank/getHistories",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"getHistories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api_tpbank_getDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://toidicodedao.click/api/tpbank/getDetails",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"tpbank",
+						"getDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api_viettelpay_LoadPhone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://toidicodedao.click/api/viettelpay/LoadPhone",
+					"protocol": "https",
+					"host": [
+						"toidicodedao",
+						"click"
+					],
+					"path": [
+						"api",
+						"viettelpay",
+						"LoadPhone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

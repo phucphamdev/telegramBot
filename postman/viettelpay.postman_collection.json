@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "da550e51-7600-4ed1-a426-10484a0cc501",
+		"name": "viettelpay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5537388"
+	},
+	"item": [
+		{
+			"name": "http://ace1368.test/api/viettelpay/LoginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/viettelpay/LoginUser",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"viettelpay",
+						"LoginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ace1368.test/api/viettelpay/Register",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"viettelpay",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

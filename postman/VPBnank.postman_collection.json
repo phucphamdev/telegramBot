@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "373b7137-b641-4291-82e2-b74aaf92aa4f",
+		"name": "VPBnank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5537388"
+	},
+	"item": [
+		{
+			"name": "http://ace1368.test/api/vpbank/doLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"0562368922\",\r\n    \"password\": \"Quan999999#\"\r\n}"
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/vpbank/doLogin",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"vpbank",
+						"doLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getHistories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://ace1368.test/api/vpbank/getHistories",
+					"protocol": "http",
+					"host": [
+						"ace1368",
+						"test"
+					],
+					"path": [
+						"api",
+						"vpbank",
+						"getHistories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
