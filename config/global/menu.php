@@ -518,35 +518,35 @@ return array(
 			),
 		),
 
-		array(
-			'title' => 'Callback',
-			'role' => 'admin',
-			'icon' => array(
-				'svg' => theme()->getSvgIcon("demo1/media/icons/duotune/general/gen025.svg", "svg-icon-2"),
-				'font' => '<i class="bi bi-layers fs-3"></i>',
-			),
-			'classes' => array('item' => 'menu-accordion'),
-			'attributes' => array(
-				"data-kt-menu-trigger" => "click",
-			),
-			'sub' => array(
-				'class' => 'menu-sub-accordion menu-active-bg',
-				'items' => array(
-					array(
-						'title' => 'Callback Nạp Tiền ',
-						'path' => 'recharge_callback',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-					array(
-						'title' => 'Callback Rút Tiền ',
-						'path' => 'withdraw_callback',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-				)
-			),
-		),
+//		array(
+//			'title' => 'Callback',
+//			'role' => 'admin',
+//			'icon' => array(
+//				'svg' => theme()->getSvgIcon("demo1/media/icons/duotune/general/gen025.svg", "svg-icon-2"),
+//				'font' => '<i class="bi bi-layers fs-3"></i>',
+//			),
+//			'classes' => array('item' => 'menu-accordion'),
+//			'attributes' => array(
+//				"data-kt-menu-trigger" => "click",
+//			),
+//			'sub' => array(
+//				'class' => 'menu-sub-accordion menu-active-bg',
+//				'items' => array(
+//					array(
+//						'title' => 'Callback Nạp Tiền ',
+//						'path' => 'recharge_callback',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//					array(
+//						'title' => 'Callback Rút Tiền ',
+//						'path' => 'withdraw_callback',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//				)
+//			),
+//		),
 
 		array(
 			'classes' => array('content' => 'pt-8 pb-2'),
