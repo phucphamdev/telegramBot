@@ -52,11 +52,11 @@
 					<!--begin::Form-->
 					<form class="mx-auto w-100 mw-600px pt-15 pb-10" novalidate="novalidate" id="kt_modal_create_campaign_stepper_form">
 
-						@include('partials/modals/create-campaign/steps/_step-1')
-						@include('partials/modals/create-campaign/steps/_step-2')
-						@include('partials/modals/create-campaign/steps/_step-3')
-						@include('partials/modals/create-campaign/steps/_step-4')
-						@include('partials/modals/create-campaign/steps/_step-5')
+						@incldue('partials/modals/create-campaign/steps/step-1')
+						@incldue('partials/modals/create-campaign/steps/step-2')
+						@incldue('partials/modals/create-campaign/steps/step-3')
+						@incldue('partials/modals/create-campaign/steps/step-4')
+						@incldue('partials/modals/create-campaign/steps/step-5')
 
 						<!--begin::Actions-->
 						<div class="d-flex flex-stack pt-10">

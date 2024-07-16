@@ -9,6 +9,7 @@ module.exports = [
     'node_modules/datatables.net-buttons/js/dataTables.buttons.js',
     'node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.js',
     'node_modules/datatables.net-buttons/js/buttons.colVis.js',
+    'node_modules/datatables.net-buttons/js/buttons.flash.js',
     'node_modules/datatables.net-buttons/js/buttons.html5.js',
     'node_modules/datatables.net-buttons/js/buttons.print.js',
     'node_modules/datatables.net-colreorder/js/dataTables.colReorder.js',

@@ -63,13 +63,13 @@
             <!--end::Nav-->
             <!--begin::Form-->
             <form class="mx-auto w-100 mw-600px pt-15 pb-10" novalidate="novalidate" id="kt_modal_create_project_form" method="post">
-              @include('partials/modals/create-project/steps/_type')
-              @include('partials/modals/create-project/steps/_settings')
-              @include('partials/modals/create-project/steps/_budget')
-              @include('partials/modals/create-project/steps/_team')
-              @include('partials/modals/create-project/steps/_targets')
-              @include('partials/modals/create-project/steps/_files')
-              @include('partials/modals/create-project/steps/_complete')
+              @incldue('partials/modals/create-project/steps/type')
+              @incldue('partials/modals/create-project/steps/settings')
+              @incldue('partials/modals/create-project/steps/budget')
+              @incldue('partials/modals/create-project/steps/team')
+              @incldue('partials/modals/create-project/steps/targets')
+              @incldue('partials/modals/create-project/steps/files')
+              @incldue('partials/modals/create-project/steps/complete')
             </form>
             <!--end::Form-->
           </div>
