@@ -595,27 +595,27 @@ return array(
 			'sub' => array(
 				'class' => 'menu-sub-accordion menu-active-bg',
 				'items' => array(
-					array(
-						'title' => 'Giao Dịch từ  API',
-						'path' => 'acb',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
+//					array(
+//						'title' => 'Giao Dịch từ  API',
+//						'path' => 'acb',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
 					array(
 						'title' => 'Giao Dịch từ CSDL',
 						'path' => 'acbtranfer',
 						'bullet' => '<span class="bullet bullet-dot"></span>',
 					),
-					array(
-						'title' => 'Giao Dịch Nani88',
-						'path' => 'acbtranfer_nani88',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-					array(
-						'title' => 'Giao Dịch Nani88 HVD',
-						'path' => 'acbtranfer_nani88_hovanduong',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
+//					array(
+//						'title' => 'Giao Dịch Nani88',
+//						'path' => 'acbtranfer_nani88',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//					array(
+//						'title' => 'Giao Dịch Nani88 HVD',
+//						'path' => 'acbtranfer_nani88_hovanduong',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
 					array(
 						'title' => 'ACBank Code',
 						'path' => 'acbbankcode',
@@ -639,12 +639,12 @@ return array(
 			'sub' => array(
 				'class' => 'menu-sub-accordion menu-active-bg',
 				'items' => array(
-					array(
-						'title' => 'Giao Dịch từ API',
-						'path' => 'vietcombank',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
+//					array(
+//						'title' => 'Giao Dịch từ API',
+//						'path' => 'vietcombank',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
 					array(
 						'title' => 'Giao Dịch từ CSDL',
 						'path' => 'transactionsvietcombank',
@@ -668,12 +668,12 @@ return array(
 			'sub' => array(
 				'class' => 'menu-sub-accordion menu-active-bg',
 				'items' => array(
-					array(
-						'title' => 'Giao Dịch từ APIs',
-						'path' => 'mbbank',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
+//					array(
+//						'title' => 'Giao Dịch từ APIs',
+//						'path' => 'mbbank',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
 					array(
 						'title' => 'Giao Dịch từ CSDL',
 						'path' => 'transactionmbbankhistorylist',
@@ -697,12 +697,13 @@ return array(
 			'sub' => array(
 				'class' => 'menu-sub-accordion menu-active-bg',
 				'items' => array(
-					array(
-						'title' => 'Giao Dịch từ API',
-						'path' => 'tpbank',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					), array(
+//					array(
+//						'title' => 'Giao Dịch từ API',
+//						'path' => 'tpbank',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+                    array(
 						'title' => 'Giao Dịch từ CSDL',
 						'path' => 'transactionstpbank',
 						'role' => 'admin',
@@ -712,58 +713,58 @@ return array(
 			),
 		),
 
-		array(
-			'title' => 'MoMo',
-			'role' => 'admin',
-			'icon' => array(
-				'svg' => theme()->getSvgIcon("demo1/media/icons/duotune/general/gen025.svg", "svg-icon-2"),
-				'font' => '<i class="bi bi-layers fs-3"></i>',
-			),
-			'classes' => array('item' => 'menu-accordion'),
-			'attributes' => array(
-				"data-kt-menu-trigger" => "click",
-			),
-			'sub' => array(
-				'class' => 'menu-sub-accordion menu-active-bg',
-				'items' => array(
-					array(
-						'title' => 'Giao Dịch từ API',
-						'path' => 'momo',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-					array(
-						'title' => 'Giao Dịch từ CSDL',
-						'path' => 'momotranfer',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-				),
-			),
-		),
+//		array(
+//			'title' => 'MoMo',
+//			'role' => 'admin',
+//			'icon' => array(
+//				'svg' => theme()->getSvgIcon("demo1/media/icons/duotune/general/gen025.svg", "svg-icon-2"),
+//				'font' => '<i class="bi bi-layers fs-3"></i>',
+//			),
+//			'classes' => array('item' => 'menu-accordion'),
+//			'attributes' => array(
+//				"data-kt-menu-trigger" => "click",
+//			),
+//			'sub' => array(
+//				'class' => 'menu-sub-accordion menu-active-bg',
+//				'items' => array(
+//					array(
+//						'title' => 'Giao Dịch từ API',
+//						'path' => 'momo',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//					array(
+//						'title' => 'Giao Dịch từ CSDL',
+//						'path' => 'momotranfer',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//				),
+//			),
+//		),
 
-		array(
-			'title' => 'Viettelpay',
-			'role' => ['admin'],
-			'icon' => array(
-				'svg' => theme()->getSvgIcon("demo1/media/icons/duotune/general/gen025.svg", "svg-icon-2"),
-				'font' => '<i class="bi bi-layers fs-3"></i>',
-			),
-			'classes' => array('item' => 'menu-accordion'),
-			'attributes' => array(
-				"data-kt-menu-trigger" => "click",
-			),
-			'sub' => array(
-				'class' => 'menu-sub-accordion menu-active-bg',
-				'items' => array(
-					array(
-						'title' => 'Danh Sách',
-						'path' => 'viettelpay',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
-				),
-			),
-		),
+//		array(
+//			'title' => 'Viettelpay',
+//			'role' => ['admin'],
+//			'icon' => array(
+//				'svg' => theme()->getSvgIcon("demo1/media/icons/duotune/general/gen025.svg", "svg-icon-2"),
+//				'font' => '<i class="bi bi-layers fs-3"></i>',
+//			),
+//			'classes' => array('item' => 'menu-accordion'),
+//			'attributes' => array(
+//				"data-kt-menu-trigger" => "click",
+//			),
+//			'sub' => array(
+//				'class' => 'menu-sub-accordion menu-active-bg',
+//				'items' => array(
+//					array(
+//						'title' => 'Danh Sách',
+//						'path' => 'viettelpay',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
+//				),
+//			),
+//		),
 
 
 //			array(
@@ -926,12 +927,12 @@ return array(
 						'role' => 'admin',
 						'bullet' => '<span class="bullet bullet-dot"></span>',
 					),
-					array(
-						'title' => 'CronJob Setting',
-						'path' => 'cronjobsetting',
-						'role' => 'admin',
-						'bullet' => '<span class="bullet bullet-dot"></span>',
-					),
+//					array(
+//						'title' => 'CronJob Setting',
+//						'path' => 'cronjobsetting',
+//						'role' => 'admin',
+//						'bullet' => '<span class="bullet bullet-dot"></span>',
+//					),
 //						array(
 //							'title' => 'Kết Nối API',
 //							'path' => 'apimanage',
