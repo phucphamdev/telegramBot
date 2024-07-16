@@ -25,9 +25,6 @@
 			return (new EloquentDataTable($query))
 			->editColumn('created_at', function (TPBank $model) {
 				return $model->created_at->format('d M, Y');
-			})
-			->editColumn('account', function (TPBank $model) {
-				return $model->account ?? "No Data";
 			});
 		}
 
@@ -68,7 +65,6 @@
 			return [
 //				Column::make('arrangementId'),
 				Column::make('id'),
-				Column::make('account'),
 				Column::make('reference'),
 				Column::make('description'),
 				Column::make('bookingDate'),

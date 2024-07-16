@@ -19,7 +19,6 @@ class TPBank extends Model
 
 		protected $fillable = [
 			'id',
-			'account',
 			'arrangementId',
 			'reference',
 			'description',
