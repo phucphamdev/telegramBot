@@ -2,8 +2,8 @@
 	return array(
 		// Product
 		'product' => array(
-			'name' => 'Kpaypro',
-			'description' => 'Kpaypro',
+			'name' => 'Chaien Map',
+			'description' => 'Chaien Map',
 			'preview' => '#',
 			'home' => '#',
 			'purchase' => '#',
@@ -26,12 +26,12 @@
 //			),
 			'demos' => array(
 				'demo1' => array(
-					'title' => 'Kpaypro',
+					'title' => 'Chaien Map',
 					'description' => 'Default Dashboard',
 					'published' => true,
 					'thumbnail' => 'demos/demo1.png',
 				),
-				
+
 //				'demo2' => array(
 //					'title' => 'Demo 2',
 //					'description' => 'SaaS Application',
@@ -192,22 +192,22 @@
 //					'published' => false,
 //					'thumbnail' => 'demos/demo24.png',
 //				),
-			
+
 			),
 		),
-		
+
 		// Meta
 		'meta' => array(
-			'title' => 'Kpaypro',
-			'description' => 'Kpaypro',
-			'keywords' => 'Kpaypro',
+			'title' => 'Chaien Map',
+			'description' => 'Chaien Map',
+			'keywords' => 'Chaien Map',
 			'canonical' => '#',
 		),
-		
+
 		// General
 		'general' => array(
 			'website' => '#',
-			'about' => 'Kpaypro',
+			'about' => 'Chaien Map',
 			'contact' => 'mailto:phuc.pham.dev@gmail.com',
 			'support' => '#',
 			'bootstrap-docs-link' => '#',
@@ -225,7 +225,7 @@
 				array(
 					'name' => 'Instagram', 'url' => '#', 'logo' => 'svg/social-logos/instagram.svg', "class" => "h-20px",
 				),
-				
+
 				array(
 					'name' => 'Facebook', 'url' => '#', 'logo' => 'svg/social-logos/facebook.svg', "class" => "h-20px",
 				),
@@ -234,7 +234,7 @@
 				),
 			),
 		),
-		
+
 		// Layout
 		'layout' => array(
 			// Docs
@@ -245,13 +245,13 @@
 				),
 				'logo-class' => 'h-25px',
 			),
-			
+
 			// Illustration
 			'illustrations' => array(
 				'set' => 'sketchy-1',
 			),
 		),
-		
+
 		// Vendors
 		'vendors' => array(
 			"datatables" => array(
@@ -423,5 +423,5 @@
 				),
 			),
 		),
-	
+
 	);

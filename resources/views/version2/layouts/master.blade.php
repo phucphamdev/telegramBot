@@ -13,10 +13,10 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>@yield('title') | Kpaypro </title>
+	<title>@yield('title') | Chaien Map </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta content="@yield('title') | Kpaypro" name="description"/>
-	<meta content="Kpaypro" name="author"/>
+	<meta content="@yield('title') | Chaien Map" name="description"/>
+	<meta content="Chaien Map" name="author"/>
 
 	<!-- App favicon -->
 	<link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.ico')}}">
