@@ -1,5 +1,5 @@
 <?php
-	
+
 	return [
 		/*
 		|--------------------------------------------------------------------------
@@ -30,16 +30,16 @@
 		*/
 		'bots' => [
 			'mybot' => [
-				'username'            => env('TELEGRAM_BOT', 'kpaypro_bot'),
-				'token'               => env('TELEGRAM_BOT_TOKEN', '5615957180:AAHxrZsI6r9joXoS49frO3WtRt0QN-Exgow'),
+				'username'            => env('TELEGRAM_BOT', 'messi_bot'),
+				'token'               => env('TELEGRAM_BOT_TOKEN', '7367196924:AAGZ9BZO45Bdkijbs9IUqQ_ESzPWcL3VaTE'),
 				'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', ''),
 				'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', ''),
 				'commands'            => [
 				],
 			],
 		],
-		
-		
+
+
 		/*
 		|--------------------------------------------------------------------------
 		| Default Bot Name
@@ -50,7 +50,7 @@
 		|
 		*/
 		'default' => 'mybot',
-		
+
 		/*
 		|--------------------------------------------------------------------------
 		| Asynchronous Requests [Optional]
@@ -63,7 +63,7 @@
 		|
 		*/
 		'async_requests' => env('TELEGRAM_ASYNC_REQUESTS', false),
-		
+
 		/*
 		|--------------------------------------------------------------------------
 		| HTTP Client Handler [Optional]
@@ -76,7 +76,7 @@
 		|
 		*/
 		'http_client_handler' => null,
-		
+
 		/*
 		|--------------------------------------------------------------------------
 		| Resolve Injected Dependencies in commands [Optional]
@@ -90,7 +90,7 @@
 		|
 		*/
 		'resolve_command_dependencies' => true,
-		
+
 		/*
 		|--------------------------------------------------------------------------
 		| Register Telegram Global Commands [Optional]
@@ -110,7 +110,7 @@
 		'commands' => [
 			Telegram\Bot\Commands\HelpCommand::class,
 		],
-		
+
 		/*
 		|--------------------------------------------------------------------------
 		| Command Groups [Optional]
@@ -136,32 +136,32 @@
 					Acme\Project\Commands\TaskCommand::class,
 			   ],
 			*/
-			
+
 			/* // Group Type: 2
 			   'subscription' => [
 					'start', // Shared Command Name.
 					'stop', // Shared Command Name.
 			   ],
 			*/
-			
+
 			/* // Group Type: 3
 				'auth' => [
 					Acme\Project\Commands\LoginCommand::class,
 					Acme\Project\Commands\SomeCommand::class,
 				],
-	
+
 				'stats' => [
 					Acme\Project\Commands\UserStatsCommand::class,
 					Acme\Project\Commands\SubscriberStatsCommand::class,
 					Acme\Project\Commands\ReportsCommand::class,
 				],
-	
+
 				'admin' => [
 					'auth', // Command Group Name.
 					'stats' // Command Group Name.
 				],
 			*/
-			
+
 			/* // Group Type: 4
 			   'myBot' => [
 					'admin', // Command Group Name.
@@ -171,7 +171,7 @@
 			   ],
 			*/
 		],
-		
+
 		/*
 		|--------------------------------------------------------------------------
 		| Shared Commands [Optional]

@@ -44,8 +44,7 @@ use App\Http\Controllers\TelegramController;
 use App\Http\Controllers\BankUsersController;
 use App\Http\Controllers\LogsUsersController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\DB;
-use Yajra\DataTables\Services\DataTable;
+use Telegram\Bot\Laravel\Facades\Telegram;
 
 
 /*
@@ -84,6 +83,12 @@ array_walk($menu, function ($val) {
 	}
 });
 
+Route::post('/telegram/webhook', [TelegramController::class, 'webhook']);
+Route::get('/set-webhook', function () {
+    $response = Telegram::setWebhook(['url' => url('telegram/webhook')]);
+
+    dd($response);
+});
 
 Route::prefix('updated-activity')->name('updated-activity.')->group(function () {
 	Route::get('/', [TelegramController::class, 'updatedActivity']);
