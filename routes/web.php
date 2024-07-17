@@ -91,6 +91,7 @@ Route::get('/set-webhook', function () {
 });
 
 Route::post('/telegram', [TelegramController::class, 'handle']);
+Route::post('/send-message', [TelegramController::class, 'sendMessage']);
 
 
 Route::prefix('updated-activity')->name('updated-activity.')->group(function () {

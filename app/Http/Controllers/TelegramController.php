@@ -2,12 +2,28 @@
 	namespace App\Http\Controllers;
 
 
-	use Illuminate\Http\Request;
+	use App\Services\TelegramService;
+    use Illuminate\Http\Request;
     use Illuminate\Support\Facades\DB;
     use Telegram\Bot\Laravel\Facades\Telegram;
 
 	class TelegramController extends Controller
 	{
+        protected $telegramService;
+
+        public function __construct(TelegramService $telegramService)
+        {
+            $this->telegramService = $telegramService;
+        }
+        public function sendMessage(Request $request)
+        {
+            $chatId = $request->input('chat_id');
+            $message = $request->input('message');
+
+            $response = $this->telegramService->sendMessage($chatId, $message);
+
+            return response()->json($response);
+        }
 
         public function handle(Request $request)
         {
