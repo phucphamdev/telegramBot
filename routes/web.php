@@ -90,6 +90,9 @@ Route::get('/set-webhook', function () {
     dd($response);
 });
 
+Route::post('/telegram', [TelegramController::class, 'handle']);
+
+
 Route::prefix('updated-activity')->name('updated-activity.')->group(function () {
 	Route::get('/', [TelegramController::class, 'updatedActivity']);
 	Route::get('/telegram', [TelegramController::class, 'contactForm']);
